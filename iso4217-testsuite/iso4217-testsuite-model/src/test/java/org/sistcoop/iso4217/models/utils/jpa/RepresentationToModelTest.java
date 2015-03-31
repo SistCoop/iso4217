@@ -23,7 +23,7 @@ import org.sistcoop.iso4217.models.CountryCodeModel;
 import org.sistcoop.iso4217.models.CountryCodeProvider;
 import org.sistcoop.iso4217.models.jpa.CountryCodeAdapter;
 import org.sistcoop.iso4217.models.jpa.JpaCountryCodeProvider;
-import org.sistcoop.iso4217.models.jpa.entities.CountryCodeEntity;
+import org.sistcoop.iso4217.models.jpa.entities.CurrencyEntity;
 import org.sistcoop.iso4217.models.utils.RepresentationToModel;
 import org.sistcoop.iso4217.provider.Provider;
 import org.sistcoop.iso4217.representations.idm.CountryCodeRepresentation;
@@ -66,7 +66,7 @@ public class RepresentationToModelTest {
 				.addClass(JpaCountryCodeProvider.class)
 				.addClass(CountryCodeAdapter.class)																						
 				
-				.addPackage(CountryCodeEntity.class.getPackage())
+				.addPackage(CurrencyEntity.class.getPackage())
 				
 				.addAsResource("META-INF/jpaTest-persistence.xml", "META-INF/persistence.xml")
 				.addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml")

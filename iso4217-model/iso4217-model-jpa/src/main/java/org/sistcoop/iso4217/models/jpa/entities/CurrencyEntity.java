@@ -15,15 +15,15 @@ import org.hibernate.annotations.Type;
 import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
-@Table(name = "COUNTRY_CODE")
+@Table(name = "CURRENCY")
 @NamedQueries({ 
-	@NamedQuery(name = CountryCodeEntity.findAll, query = "SELECT c FROM CountryCodeEntity c"), 
-	@NamedQuery(name = CountryCodeEntity.findByAlpha2Code, query = "SELECT c FROM CountryCodeEntity c WHERE c.alpha2Code = :alpha2Code"),
-	@NamedQuery(name = CountryCodeEntity.findByAlpha3Code, query = "SELECT c FROM CountryCodeEntity c WHERE c.alpha3Code = :alpha3Code"),
-	@NamedQuery(name = CountryCodeEntity.findByNumericCode, query = "SELECT c FROM CountryCodeEntity c WHERE c.numericCode = :numericCode"),
-	@NamedQuery(name = CountryCodeEntity.findByFilterText, query = "SELECT c FROM CountryCodeEntity c WHERE c.alpha2Code LIKE :filterText OR c.alpha3Code LIKE :filterText OR c.numericCode LIKE :filterText OR c.shortNameEn LIKE :filterText OR c.shortNameUppercaseEn LIKE :filterText OR c.fullNameEn LIKE :filterText"),	
-	@NamedQuery(name = CountryCodeEntity.count, query = "select count(u) from CountryCodeEntity u") })
-public class CountryCodeEntity implements Serializable {
+	@NamedQuery(name = CurrencyEntity.findAll, query = "SELECT c FROM CountryCodeEntity c"), 
+	@NamedQuery(name = CurrencyEntity.findByAlpha2Code, query = "SELECT c FROM CountryCodeEntity c WHERE c.alpha2Code = :alpha2Code"),
+	@NamedQuery(name = CurrencyEntity.findByAlpha3Code, query = "SELECT c FROM CountryCodeEntity c WHERE c.alpha3Code = :alpha3Code"),
+	@NamedQuery(name = CurrencyEntity.findByNumericCode, query = "SELECT c FROM CountryCodeEntity c WHERE c.numericCode = :numericCode"),
+	@NamedQuery(name = CurrencyEntity.findByFilterText, query = "SELECT c FROM CountryCodeEntity c WHERE c.alpha2Code LIKE :filterText OR c.alpha3Code LIKE :filterText OR c.numericCode LIKE :filterText OR c.shortNameEn LIKE :filterText OR c.shortNameUppercaseEn LIKE :filterText OR c.fullNameEn LIKE :filterText"),	
+	@NamedQuery(name = CurrencyEntity.count, query = "select count(u) from CountryCodeEntity u") })
+public class CurrencyEntity implements Serializable {
 
 	/**
 	 * 
@@ -50,7 +50,8 @@ public class CountryCodeEntity implements Serializable {
 	private String shortNameUppercaseEn;
 	private String fullNameEn;
 
-	public CountryCodeEntity() {
+	//ENTITY CURRENCY ALPHABETICCODE NUMERICCODE MINORUNIT
+	public CurrencyEntity() {
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -171,7 +172,7 @@ public class CountryCodeEntity implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		CountryCodeEntity other = (CountryCodeEntity) obj;
+		CurrencyEntity other = (CurrencyEntity) obj;
 		if (alpha2Code == null) {
 			if (other.alpha2Code != null)
 				return false;

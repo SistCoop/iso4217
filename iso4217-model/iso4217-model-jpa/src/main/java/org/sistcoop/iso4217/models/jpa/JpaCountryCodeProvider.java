@@ -14,7 +14,7 @@ import javax.persistence.TypedQuery;
 
 import org.sistcoop.iso4217.models.CountryCodeModel;
 import org.sistcoop.iso4217.models.CountryCodeProvider;
-import org.sistcoop.iso4217.models.jpa.entities.CountryCodeEntity;
+import org.sistcoop.iso4217.models.jpa.entities.CurrencyEntity;
 
 @Named
 @Stateless
@@ -35,7 +35,7 @@ public class JpaCountryCodeProvider implements CountryCodeProvider {
 			String alpha3Code, String numericCode, boolean independent,
 			boolean status, String shortNameEn, String shortNameUppercaseEn,
 			String fullNameEn) {
-		CountryCodeEntity entity = new CountryCodeEntity();
+		CurrencyEntity entity = new CurrencyEntity();
 		entity.setAlpha2Code(alpha2Code);
 		entity.setAlpha3Code(alpha3Code);
 		entity.setNumericCode(numericCode);
@@ -50,7 +50,7 @@ public class JpaCountryCodeProvider implements CountryCodeProvider {
 
 	@Override
 	public boolean removeCountryCode(CountryCodeModel countryCodeModel) {			
-		CountryCodeEntity countryCodeEntity = em.find(CountryCodeEntity.class, countryCodeModel.getId());
+		CurrencyEntity countryCodeEntity = em.find(CurrencyEntity.class, countryCodeModel.getId());
         if (countryCodeEntity == null) return false;
         em.remove(countryCodeEntity);
         return true;      
@@ -58,9 +58,9 @@ public class JpaCountryCodeProvider implements CountryCodeProvider {
 
 	@Override
 	public CountryCodeModel getCountryCodeByAlpha2Code(String alpha2Code) {
-		TypedQuery<CountryCodeEntity> query = em.createNamedQuery(CountryCodeEntity.findByAlpha2Code, CountryCodeEntity.class);
+		TypedQuery<CurrencyEntity> query = em.createNamedQuery(CurrencyEntity.findByAlpha2Code, CurrencyEntity.class);
 		query.setParameter("alpha2Code", alpha2Code);		
-		List<CountryCodeEntity> results = query.getResultList();
+		List<CurrencyEntity> results = query.getResultList();
 		if (results.size() == 0)
 			return null;
 		return new CountryCodeAdapter(em, results.get(0));
@@ -68,9 +68,9 @@ public class JpaCountryCodeProvider implements CountryCodeProvider {
 
 	@Override
 	public CountryCodeModel getCountryCodeByAlpha3Code(String alpha3Code) {
-		TypedQuery<CountryCodeEntity> query = em.createNamedQuery(CountryCodeEntity.findByAlpha3Code, CountryCodeEntity.class);
+		TypedQuery<CurrencyEntity> query = em.createNamedQuery(CurrencyEntity.findByAlpha3Code, CurrencyEntity.class);
 		query.setParameter("alpha3Code", alpha3Code);		
-		List<CountryCodeEntity> results = query.getResultList();
+		List<CurrencyEntity> results = query.getResultList();
 		if (results.size() == 0)
 			return null;
 		return new CountryCodeAdapter(em, results.get(0));
@@ -78,9 +78,9 @@ public class JpaCountryCodeProvider implements CountryCodeProvider {
 
 	@Override
 	public CountryCodeModel getCountryCodeByNumericCode(String numericCode) {
-		TypedQuery<CountryCodeEntity> query = em.createNamedQuery(CountryCodeEntity.findByNumericCode, CountryCodeEntity.class);
+		TypedQuery<CurrencyEntity> query = em.createNamedQuery(CurrencyEntity.findByNumericCode, CurrencyEntity.class);
 		query.setParameter("numericCode", numericCode);		
-		List<CountryCodeEntity> results = query.getResultList();
+		List<CurrencyEntity> results = query.getResultList();
 		if (results.size() == 0)
 			return null;
 		return new CountryCodeAdapter(em, results.get(0));
@@ -88,7 +88,7 @@ public class JpaCountryCodeProvider implements CountryCodeProvider {
 
 	@Override
 	public int getCountryCodesCount() {
-		Object count = em.createNamedQuery(CountryCodeEntity.count).getSingleResult();		
+		Object count = em.createNamedQuery(CurrencyEntity.count).getSingleResult();		
 		return (Integer) count;
 	}
 	
@@ -104,16 +104,16 @@ public class JpaCountryCodeProvider implements CountryCodeProvider {
 	
 	@Override
 	public List<CountryCodeModel> getCountryCodes(int firstResult, int maxResults) {
-		TypedQuery<CountryCodeEntity> query = em.createNamedQuery(CountryCodeEntity.findAll, CountryCodeEntity.class);
+		TypedQuery<CurrencyEntity> query = em.createNamedQuery(CurrencyEntity.findAll, CurrencyEntity.class);
 		if (firstResult != -1) {
 			query.setFirstResult(firstResult);
 		}
 		if (maxResults != -1) {
 			query.setMaxResults(maxResults);
 		}
-		List<CountryCodeEntity> results = query.getResultList();
+		List<CurrencyEntity> results = query.getResultList();
 		List<CountryCodeModel> users = new ArrayList<CountryCodeModel>();
-		for (CountryCodeEntity entity : results)
+		for (CurrencyEntity entity : results)
 			users.add(new CountryCodeAdapter(em, entity));
 		return users;
 	}
@@ -123,7 +123,7 @@ public class JpaCountryCodeProvider implements CountryCodeProvider {
 		if (filterText == null)
 			filterText = "";
 
-		TypedQuery<CountryCodeEntity> query = em.createNamedQuery(CountryCodeEntity.findByFilterText, CountryCodeEntity.class);
+		TypedQuery<CurrencyEntity> query = em.createNamedQuery(CurrencyEntity.findByFilterText, CurrencyEntity.class);
 		query.setParameter("filterText", "%" + filterText.toUpperCase() + "%");
 		if (firstResult != -1) {
 			query.setFirstResult(firstResult);
@@ -131,9 +131,9 @@ public class JpaCountryCodeProvider implements CountryCodeProvider {
 		if (maxResults != -1) {
 			query.setMaxResults(maxResults);
 		}
-		List<CountryCodeEntity> results = query.getResultList();
+		List<CurrencyEntity> results = query.getResultList();
 		List<CountryCodeModel> users = new ArrayList<CountryCodeModel>();
-		for (CountryCodeEntity entity : results)
+		for (CurrencyEntity entity : results)
 			users.add(new CountryCodeAdapter(em, entity));
 		return users;
 	}

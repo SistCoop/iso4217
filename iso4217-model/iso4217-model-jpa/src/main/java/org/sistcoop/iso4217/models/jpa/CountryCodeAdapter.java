@@ -3,7 +3,7 @@ package org.sistcoop.iso4217.models.jpa;
 import javax.persistence.EntityManager;
 
 import org.sistcoop.iso4217.models.CountryCodeModel;
-import org.sistcoop.iso4217.models.jpa.entities.CountryCodeEntity;
+import org.sistcoop.iso4217.models.jpa.entities.CurrencyEntity;
 
 public class CountryCodeAdapter implements CountryCodeModel {
 
@@ -12,23 +12,23 @@ public class CountryCodeAdapter implements CountryCodeModel {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	protected CountryCodeEntity countryCodeEntity;
+	protected CurrencyEntity countryCodeEntity;
 	protected EntityManager em;
 
-	public CountryCodeAdapter(EntityManager em, CountryCodeEntity countryCodeEntity) {
+	public CountryCodeAdapter(EntityManager em, CurrencyEntity countryCodeEntity) {
 		this.em = em;
 		this.countryCodeEntity = countryCodeEntity;
 	}
 
-	public CountryCodeEntity getCountryCodeEntity() {		
+	public CurrencyEntity getCountryCodeEntity() {		
 		return this.countryCodeEntity;
 	}
 
-	public static CountryCodeEntity toCountryCodeEntity(CountryCodeModel model, EntityManager em) {			
+	public static CurrencyEntity toCountryCodeEntity(CountryCodeModel model, EntityManager em) {			
 		if (model instanceof CountryCodeAdapter) {
 			return ((CountryCodeAdapter) model).getCountryCodeEntity();
 		}
-		return em.getReference(CountryCodeEntity.class, model.getId());						
+		return em.getReference(CurrencyEntity.class, model.getId());						
 	}
 
 	@Override
