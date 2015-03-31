@@ -1,2 +1,2 @@
-# iso4217
-iso4217
+# persona
+personal model

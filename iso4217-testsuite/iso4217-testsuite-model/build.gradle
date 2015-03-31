@@ -1,0 +1,5 @@
+dependencies {
+	compile project(':iso4217-model:iso4217-model-api')
+	compile project(':iso4217-model:iso4217-model-jpa')
+	compile project(':iso4217-model:iso4217-model-mongo')
+}

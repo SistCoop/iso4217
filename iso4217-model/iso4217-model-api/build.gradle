@@ -1,0 +1,5 @@
+dependencies {
+	compile project(':iso4217-core')
+			
+	compile group: 'javax.ejb', name: 'javax.ejb-api', version: '3.2'	
+}

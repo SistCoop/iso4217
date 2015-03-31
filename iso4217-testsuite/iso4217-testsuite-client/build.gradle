@@ -1,0 +1,5 @@
+dependencies {
+    compile project(':iso4217-integration:iso4217-client')
+	compile project(':iso4217-services')   	   
+}
+
