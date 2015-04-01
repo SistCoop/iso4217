@@ -10,11 +10,9 @@ import java.io.File;
 import java.math.BigDecimal;
 import java.util.List;
 
-import javax.annotation.Resource;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.transaction.UserTransaction;
 
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
@@ -28,8 +26,6 @@ import org.junit.runner.RunWith;
 import org.sistcoop.iso4217.models.CurrencyModel;
 import org.sistcoop.iso4217.models.CurrencyProvider;
 import org.sistcoop.iso4217.models.DenominationModel;
-import org.sistcoop.iso4217.models.jpa.CurrencyAdapter;
-import org.sistcoop.iso4217.models.jpa.JpaCurrencyProvider;
 import org.sistcoop.iso4217.models.jpa.entities.CurrencyEntity;
 import org.sistcoop.iso4217.provider.Provider;
 import org.slf4j.Logger;
@@ -43,9 +39,6 @@ public class CurrencyModelTest {
 
 	@PersistenceContext
 	private EntityManager em;
-
-	@Resource           
-	private UserTransaction utx; 
 		
 	@Inject
 	private CurrencyProvider currencyProvider;
@@ -170,7 +163,7 @@ public class CurrencyModelTest {
 		model.addDenomination(BigDecimal.ONE);
 		model.addDenomination( BigDecimal.TEN);
 		model.addDenomination(new BigDecimal("500"));
-			
+					
 		List<DenominationModel> denominations = model.getDenominations();
 		
 		assertThat(denominations.size(), is(notNullValue()));

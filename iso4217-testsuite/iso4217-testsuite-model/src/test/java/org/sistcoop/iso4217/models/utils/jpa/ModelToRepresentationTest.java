@@ -55,7 +55,7 @@ public class ModelToRepresentationTest {
 		WebArchive war = ShrinkWrap.create(WebArchive.class, "test.war")
 				/**Model to representation**/
 				.addClass(ModelToRepresentation.class)
-				.addClass(CurrencyRepresentation.class)
+				.addPackage(CurrencyRepresentation.class.getPackage())
 				
 				/**persona-model-api**/
 				.addClass(Provider.class)										
