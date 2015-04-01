@@ -1,5 +1,8 @@
 package org.sistcoop.iso4217.models;
 
+import java.math.BigDecimal;
+import java.util.List;
+
 public interface CurrencyModel extends Model {
 
 	Integer getId();
@@ -19,5 +22,11 @@ public interface CurrencyModel extends Model {
 	int getMinorUnit();
 
 	void setMinorUnit(int minorUnit);
+
+	DenominationModel addDenomination(BigDecimal value);
+
+	boolean removeDenomination(DenominationModel denominationModel);
+
+	List<DenominationModel> getDenominations();
 
 }

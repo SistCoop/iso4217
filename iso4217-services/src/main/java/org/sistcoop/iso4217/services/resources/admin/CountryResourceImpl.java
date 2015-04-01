@@ -13,9 +13,11 @@ import javax.ws.rs.core.UriInfo;
 import org.sistcoop.iso4217.admin.client.resource.CurrencyResource;
 import org.sistcoop.iso4217.models.CurrencyModel;
 import org.sistcoop.iso4217.models.CurrencyProvider;
+import org.sistcoop.iso4217.models.DenominationModel;
 import org.sistcoop.iso4217.models.utils.ModelToRepresentation;
 import org.sistcoop.iso4217.models.utils.RepresentationToModel;
 import org.sistcoop.iso4217.representations.idm.CurrencyRepresentation;
+import org.sistcoop.iso4217.representations.idm.DenominationRepresentation;
 
 @Stateless
 public class CountryResourceImpl implements CurrencyResource {
@@ -110,6 +112,31 @@ public class CountryResourceImpl implements CurrencyResource {
 	public int countAll() {
 		int count = currencyProvider.getCurrencyCount();
 		return count;
+	}
+
+	/**
+	 * Denominations*/
+	
+	@Override
+	public List<DenominationRepresentation> getDenominationsByAlphabeticCode(String alphabeticCode) {
+		CurrencyModel model = currencyProvider.getCurrencyByAlphabeticCode(alphabeticCode);
+		List<DenominationModel> denominationModels = model.getDenominations();
+		List<DenominationRepresentation> result = new ArrayList<DenominationRepresentation>();
+		for (DenominationModel denominationModel : denominationModels) {
+			result.add(ModelToRepresentation.toRepresentation(denominationModel));
+		}
+		return result;
+	}
+
+	@Override
+	public List<DenominationRepresentation> getDenominationsByNumericCode(String numericCode) {
+		CurrencyModel model = currencyProvider.getCurrencyByNumericCode(numericCode);
+		List<DenominationModel> denominationModels = model.getDenominations();
+		List<DenominationRepresentation> result = new ArrayList<DenominationRepresentation>();
+		for (DenominationModel denominationModel : denominationModels) {
+			result.add(ModelToRepresentation.toRepresentation(denominationModel));
+		}
+		return result;
 	}
 
 }

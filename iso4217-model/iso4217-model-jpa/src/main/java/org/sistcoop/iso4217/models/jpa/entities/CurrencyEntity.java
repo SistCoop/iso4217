@@ -1,10 +1,14 @@
 package org.sistcoop.iso4217.models.jpa.entities;
 
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -42,6 +46,8 @@ public class CurrencyEntity implements Serializable {
 	private String numericCode;
 	private int minorUnit;
 
+	private Set<DenominationEntity> denominations = new HashSet<DenominationEntity>();
+	
 	public CurrencyEntity() {
 		// TODO Auto-generated constructor stub
 	}
@@ -110,6 +116,15 @@ public class CurrencyEntity implements Serializable {
 		this.minorUnit = minorUnit;
 	}
 
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "currency")
+	public Set<DenominationEntity> getDenominations() {
+		return denominations;
+	}
+
+	public void setDenominations(Set<DenominationEntity> denominations) {
+		this.denominations = denominations;
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;

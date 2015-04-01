@@ -5,6 +5,7 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.junit.Assert.assertThat;
 
 import java.io.File;
+import java.math.BigDecimal;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
@@ -21,12 +22,15 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.sistcoop.iso4217.models.CurrencyModel;
 import org.sistcoop.iso4217.models.CurrencyProvider;
+import org.sistcoop.iso4217.models.DenominationModel;
 import org.sistcoop.iso4217.models.jpa.CurrencyAdapter;
+import org.sistcoop.iso4217.models.jpa.DenominationAdapter;
 import org.sistcoop.iso4217.models.jpa.JpaCurrencyProvider;
 import org.sistcoop.iso4217.models.jpa.entities.CurrencyEntity;
 import org.sistcoop.iso4217.models.utils.ModelToRepresentation;
 import org.sistcoop.iso4217.provider.Provider;
 import org.sistcoop.iso4217.representations.idm.CurrencyRepresentation;
+import org.sistcoop.iso4217.representations.idm.DenominationRepresentation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -61,7 +65,8 @@ public class ModelToRepresentationTest {
 												
 				/**persona-model-jpa**/				
 				.addClass(JpaCurrencyProvider.class)
-				.addClass(CurrencyAdapter.class)																						
+				.addClass(CurrencyAdapter.class)	
+				.addClass(DenominationAdapter.class)	
 				
 				.addPackage(CurrencyEntity.class.getPackage())
 				
@@ -75,7 +80,7 @@ public class ModelToRepresentationTest {
 	}				
 	
 	@Test
-	public void toRepresentation() {
+	public void toRepresentationCurrency() {
 		CurrencyModel model = currencyProvider.addCurrency("PERU", "Nuevo Sol", "PEN", "604", 2);				
 		
 		CurrencyRepresentation currencyRepresentation = ModelToRepresentation.toRepresentation(model);
@@ -85,8 +90,19 @@ public class ModelToRepresentationTest {
 		assertThat(currencyRepresentation.getCurrency(), is(notNullValue()));
 		assertThat(currencyRepresentation.getAlphabeticCode(), is(notNullValue()));
 		assertThat(currencyRepresentation.getNumericCode(), is(notNullValue()));
-		assertThat(currencyRepresentation.getMinorUnit(), is(notNullValue()));		
-		
+		assertThat(currencyRepresentation.getMinorUnit(), is(notNullValue()));				
 	}	
+	
+	@Test
+	public void toRepresentationDenomination() {
+		CurrencyModel model = currencyProvider.addCurrency("PERU", "Nuevo Sol", "PEN", "604", 2);								
+		DenominationModel denominationModel = model.addDenomination(BigDecimal.TEN);
+		
+		DenominationRepresentation denominationRepresentation = ModelToRepresentation.toRepresentation(denominationModel);
+				
+		assertThat(denominationRepresentation, is(notNullValue()));
+		assertThat(denominationRepresentation.getValue(), is(notNullValue()));			
+		
+	}
 	
 }

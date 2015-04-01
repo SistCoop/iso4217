@@ -20,6 +20,7 @@ import javax.ws.rs.core.Response;
 
 import org.hibernate.validator.constraints.NotBlank;
 import org.sistcoop.iso4217.representations.idm.CurrencyRepresentation;
+import org.sistcoop.iso4217.representations.idm.DenominationRepresentation;
 
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
@@ -70,7 +71,7 @@ public interface CurrencyResource {
 			@Valid CurrencyRepresentation currencyRepresentation);
 	
 	@DELETE
-	@Path("/alphabeticCode/{alphabeticCode}")
+	@Path("/alphabeticCode/{alphabeticCode}")	
 	public void removeByAlphabeticCode(
 			@PathParam("alphabeticCode") 
 			@NotNull 
@@ -100,4 +101,22 @@ public interface CurrencyResource {
 	@Path("/count")	
 	public int countAll();
 	
+	/**
+	 * Denominations*/
+	
+	@GET	
+	@Path("/alphabeticCode/{alphabeticCode}")	
+	public List<DenominationRepresentation> getDenominationsByAlphabeticCode(
+			@PathParam("alphabeticCode") 
+			@NotNull 
+			@NotBlank
+			@Size(min = 3, max = 3) String alphabeticCode);
+	
+	@GET		
+	@Path("/numericCode/{numericCode}")
+	public List<DenominationRepresentation> getDenominationsByNumericCode(
+			@PathParam("numericCode") 
+			@NotNull 
+			@NotBlank
+			@Size(min = 3, max = 3) String numericCode);
 }

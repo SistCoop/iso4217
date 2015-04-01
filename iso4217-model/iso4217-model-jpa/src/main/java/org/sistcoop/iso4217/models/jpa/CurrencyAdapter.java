@@ -1,9 +1,16 @@
 package org.sistcoop.iso4217.models.jpa;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
 import javax.persistence.EntityManager;
 
 import org.sistcoop.iso4217.models.CurrencyModel;
+import org.sistcoop.iso4217.models.DenominationModel;
 import org.sistcoop.iso4217.models.jpa.entities.CurrencyEntity;
+import org.sistcoop.iso4217.models.jpa.entities.DenominationEntity;
 
 public class CurrencyAdapter implements CurrencyModel {
 
@@ -28,7 +35,7 @@ public class CurrencyAdapter implements CurrencyModel {
 		if (model instanceof CurrencyAdapter) {
 			return ((CurrencyAdapter) model).getCurrencyEntity();
 		}
-		return em.getReference(CurrencyEntity.class, model.getId());				
+		return em.getReference(CurrencyEntity.class, model.getId());
 	}
 
 	@Override
@@ -82,6 +89,34 @@ public class CurrencyAdapter implements CurrencyModel {
 	}
 
 	@Override
+	public DenominationModel addDenomination(BigDecimal value) {
+		DenominationEntity denominationEntity = new DenominationEntity();
+		denominationEntity.setCurrency(currencyEntity);
+		denominationEntity.setValue(value);
+		em.persist(denominationEntity);
+		return new DenominationAdapter(em, denominationEntity);
+	}
+
+	@Override
+	public boolean removeDenomination(DenominationModel denominationModel) {
+		DenominationEntity denominationEntity = em.find(DenominationEntity.class, denominationModel.getId());
+		if (denominationEntity == null)
+			return false;
+		em.remove(denominationEntity);
+		return true;
+	}
+
+	@Override
+	public List<DenominationModel> getDenominations() {
+		Set<DenominationEntity> denominationEntities = currencyEntity.getDenominations();
+		List<DenominationModel> result = new ArrayList<DenominationModel>();
+		for (DenominationEntity denominationEntity : denominationEntities) {
+			result.add(new DenominationAdapter(em, denominationEntity));
+		}
+		return result;
+	}
+
+	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
@@ -98,7 +133,7 @@ public class CurrencyAdapter implements CurrencyModel {
 			return false;
 		if (!(obj instanceof CurrencyModel))
 			return false;
-		CurrencyModel other = (CurrencyModel) obj;		
+		CurrencyModel other = (CurrencyModel) obj;
 		if (getAlphabeticCode() == null) {
 			if (other.getAlphabeticCode() != null)
 				return false;
