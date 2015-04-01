@@ -4,27 +4,24 @@ import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 
-import org.sistcoop.iso4217.models.CountryCodeModel;
-import org.sistcoop.iso4217.models.CountryCodeProvider;
-import org.sistcoop.iso4217.representations.idm.CountryCodeRepresentation;
+import org.sistcoop.iso4217.models.CurrencyModel;
+import org.sistcoop.iso4217.models.CurrencyProvider;
+import org.sistcoop.iso4217.representations.idm.CurrencyRepresentation;
 
 @Stateless
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
 public class RepresentationToModel {	
 		
-	public CountryCodeModel createCountryCode(
-			CountryCodeRepresentation rep, 		
-			CountryCodeProvider countryCodeProvider) {		
+	public CurrencyModel createCurrency(
+			CurrencyRepresentation rep, 		
+			CurrencyProvider currencyProvider) {		
 
-		CountryCodeModel model = countryCodeProvider.addCountryCode(
-				rep.getAlpha2Code(), 
-				rep.getAlpha3Code(), 
+		CurrencyModel model = currencyProvider.addCurrency(
+				rep.getEntity(),
+				rep.getCurrency(),
+				rep.getAlphabeticCode(),
 				rep.getNumericCode(), 
-				rep.getIndependent(), 
-				rep.getStatus(), 
-				rep.getShortNameEn(),
-				rep.getShortNameUppercaseEn(),
-				rep.getFullNameEn());		
+				rep.getMinorUnit());		
 		
 		return model;
 	}	

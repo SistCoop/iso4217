@@ -23,10 +23,10 @@ import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.jboss.shrinkwrap.resolver.api.maven.Maven;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.sistcoop.iso4217.models.CountryCodeModel;
-import org.sistcoop.iso4217.models.CountryCodeProvider;
-import org.sistcoop.iso4217.models.jpa.CountryCodeAdapter;
-import org.sistcoop.iso4217.models.jpa.JpaCountryCodeProvider;
+import org.sistcoop.iso4217.models.CurrencyModel;
+import org.sistcoop.iso4217.models.CurrencyProvider;
+import org.sistcoop.iso4217.models.jpa.CurrencyAdapter;
+import org.sistcoop.iso4217.models.jpa.JpaCurrencyProvider;
 import org.sistcoop.iso4217.models.jpa.entities.CurrencyEntity;
 import org.sistcoop.iso4217.provider.Provider;
 import org.slf4j.Logger;
@@ -34,9 +34,9 @@ import org.slf4j.LoggerFactory;
 
 @RunWith(Arquillian.class)
 @UsingDataSet("empty.xml")
-public class CountryCodeModelTest {
+public class CurrencyModelTest {
 
-	Logger log = LoggerFactory.getLogger(CountryCodeModelTest.class);
+	Logger log = LoggerFactory.getLogger(CurrencyModelTest.class);
 
 	@PersistenceContext
 	private EntityManager em;
@@ -45,7 +45,7 @@ public class CountryCodeModelTest {
 	private UserTransaction utx; 
 		
 	@Inject
-	private CountryCodeProvider countryCodeProvider;
+	private CurrencyProvider currencyProvider;
 	
 	@Deployment
 	public static WebArchive createDeployment() {
@@ -56,13 +56,13 @@ public class CountryCodeModelTest {
 		WebArchive war = ShrinkWrap.create(WebArchive.class, "test.war")
 				/**persona-model-api**/
 				.addClass(Provider.class)										
-				.addClass(CountryCodeProvider.class)				
+				.addClass(CurrencyProvider.class)				
 				
-				.addPackage(CountryCodeModel.class.getPackage())				
+				.addPackage(CurrencyModel.class.getPackage())				
 												
 				/**persona-model-jpa**/				
-				.addClass(JpaCountryCodeProvider.class)
-				.addClass(CountryCodeAdapter.class)																						
+				.addClass(JpaCurrencyProvider.class)
+				.addClass(CurrencyAdapter.class)																						
 				
 				.addPackage(CurrencyEntity.class.getPackage())
 				
@@ -77,35 +77,32 @@ public class CountryCodeModelTest {
 	
 	@Test
 	public void commit() {
-		CountryCodeModel model1 = countryCodeProvider.addCountryCode("PE", "PER", "051", true, true, "Peru", "PERU", "Republic of Peru");				
+		CurrencyModel model1 = currencyProvider.addCurrency("PERU", "Nuevo Sol", "PEN", "604", 2);				
 		
-		String alpha2Code = model1.getAlpha2Code();
-		String newShortNameEn = "peru arriba";
-		String newShortNameUppercaseEn = "PERU ARRIBA";
+		String alphabeticCode = model1.getAlphabeticCode();
+		String newEntity = "Peru new";
+		String newCurrency = "Nuevo Sol new";
 		
-		model1.setShortNameEn(newShortNameEn);
-		model1.setShortNameUppercaseEn(newShortNameUppercaseEn);
+		model1.setEntity(newEntity);
+		model1.setCurrency(newCurrency);		
 		model1.commit();	
 
-		CountryCodeModel model2 = countryCodeProvider.getCountryCodeByAlpha2Code(alpha2Code);;
+		CurrencyModel model2 = currencyProvider.getCurrencyByAlphabeticCode(alphabeticCode);
 				
-		assertThat(model2.getShortNameEn(), is(equalTo(newShortNameEn)));
-		assertThat(model2.getShortNameUppercaseEn(), is(equalTo(newShortNameUppercaseEn)));
+		assertThat(model2.getEntity(), is(equalTo(newEntity)));
+		assertThat(model2.getCurrency(), is(equalTo(newCurrency)));
 	}	
 
 	@Test
 	public void testAttributes() {
-		CountryCodeModel model = countryCodeProvider.addCountryCode("PE", "PER", "051", true, true, "Peru", "PERU", "Republic of Peru");						
+		CurrencyModel model = currencyProvider.addCurrency("PERU", "Nuevo Sol", "PEN", "604", 2);						
 		
 		assertThat(model.getId(), is(notNullValue()));
-		assertThat(model.getAlpha2Code(), is(notNullValue()));
-		assertThat(model.getAlpha3Code(), is(notNullValue()));
+		assertThat(model.getEntity(), is(notNullValue()));
+		assertThat(model.getCurrency(), is(notNullValue()));
+		assertThat(model.getAlphabeticCode(), is(notNullValue()));
 		assertThat(model.getNumericCode(), is(notNullValue()));
-		assertThat(model.isIndependent(), is(true));
-		assertThat(model.isStatus(), is(true));
-		assertThat(model.getShortNameEn(), is(notNullValue()));
-		assertThat(model.getShortNameUppercaseEn(), is(notNullValue()));
-		assertThat(model.getFullNameEn(), is(notNullValue()));	
+		assertThat(model.getMinorUnit(), is(notNullValue()));
 	}
 		
 }

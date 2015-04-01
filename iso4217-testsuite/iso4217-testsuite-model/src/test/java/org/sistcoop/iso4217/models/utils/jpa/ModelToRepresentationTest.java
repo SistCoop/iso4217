@@ -19,14 +19,14 @@ import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.jboss.shrinkwrap.resolver.api.maven.Maven;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.sistcoop.iso4217.models.CountryCodeModel;
-import org.sistcoop.iso4217.models.CountryCodeProvider;
-import org.sistcoop.iso4217.models.jpa.CountryCodeAdapter;
-import org.sistcoop.iso4217.models.jpa.JpaCountryCodeProvider;
+import org.sistcoop.iso4217.models.CurrencyModel;
+import org.sistcoop.iso4217.models.CurrencyProvider;
+import org.sistcoop.iso4217.models.jpa.CurrencyAdapter;
+import org.sistcoop.iso4217.models.jpa.JpaCurrencyProvider;
 import org.sistcoop.iso4217.models.jpa.entities.CurrencyEntity;
 import org.sistcoop.iso4217.models.utils.ModelToRepresentation;
 import org.sistcoop.iso4217.provider.Provider;
-import org.sistcoop.iso4217.representations.idm.CountryCodeRepresentation;
+import org.sistcoop.iso4217.representations.idm.CurrencyRepresentation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,7 +40,7 @@ public class ModelToRepresentationTest {
 	private EntityManager em;
 		
 	@Inject
-	private CountryCodeProvider countryCodeProvider;
+	private CurrencyProvider currencyProvider;
 	
 	@Deployment
 	public static WebArchive createDeployment() {
@@ -51,17 +51,17 @@ public class ModelToRepresentationTest {
 		WebArchive war = ShrinkWrap.create(WebArchive.class, "test.war")
 				/**Model to representation**/
 				.addClass(ModelToRepresentation.class)
-				.addClass(CountryCodeRepresentation.class)
+				.addClass(CurrencyRepresentation.class)
 				
 				/**persona-model-api**/
 				.addClass(Provider.class)										
-				.addClass(CountryCodeProvider.class)				
+				.addClass(CurrencyProvider.class)				
 				
-				.addPackage(CountryCodeModel.class.getPackage())				
+				.addPackage(CurrencyModel.class.getPackage())				
 												
 				/**persona-model-jpa**/				
-				.addClass(JpaCountryCodeProvider.class)
-				.addClass(CountryCodeAdapter.class)																						
+				.addClass(JpaCurrencyProvider.class)
+				.addClass(CurrencyAdapter.class)																						
 				
 				.addPackage(CurrencyEntity.class.getPackage())
 				
@@ -75,20 +75,17 @@ public class ModelToRepresentationTest {
 	}				
 	
 	@Test
-	public void commit() {
-		CountryCodeModel model1 = countryCodeProvider.addCountryCode("PE", "PER", "051", true, true, "Peru", "PERU", "Republic of Peru");				
+	public void toRepresentation() {
+		CurrencyModel model = currencyProvider.addCurrency("PERU", "Nuevo Sol", "PEN", "604", 2);				
 		
-		CountryCodeRepresentation countryCodeRepresentation = ModelToRepresentation.toRepresentation(model1);
+		CurrencyRepresentation currencyRepresentation = ModelToRepresentation.toRepresentation(model);
 				
-		assertThat(countryCodeRepresentation, is(notNullValue()));
-		assertThat(countryCodeRepresentation.getAlpha2Code(), is(notNullValue()));
-		assertThat(countryCodeRepresentation.getAlpha3Code(), is(notNullValue()));
-		assertThat(countryCodeRepresentation.getNumericCode(), is(notNullValue()));
-		assertThat(countryCodeRepresentation.getIndependent(), is(notNullValue()));
-		assertThat(countryCodeRepresentation.getStatus(), is(notNullValue()));
-		assertThat(countryCodeRepresentation.getShortNameEn(), is(notNullValue()));
-		assertThat(countryCodeRepresentation.getShortNameUppercaseEn(), is(notNullValue()));
-		assertThat(countryCodeRepresentation.getFullNameEn(), is(notNullValue()));
+		assertThat(currencyRepresentation, is(notNullValue()));
+		assertThat(currencyRepresentation.getEntity(), is(notNullValue()));
+		assertThat(currencyRepresentation.getCurrency(), is(notNullValue()));
+		assertThat(currencyRepresentation.getAlphabeticCode(), is(notNullValue()));
+		assertThat(currencyRepresentation.getNumericCode(), is(notNullValue()));
+		assertThat(currencyRepresentation.getMinorUnit(), is(notNullValue()));		
 		
 	}	
 	

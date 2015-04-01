@@ -1,25 +1,22 @@
 package org.sistcoop.iso4217.models.utils;
 
-import org.sistcoop.iso4217.models.CountryCodeModel;
-import org.sistcoop.iso4217.representations.idm.CountryCodeRepresentation;
+import org.sistcoop.iso4217.models.CurrencyModel;
+import org.sistcoop.iso4217.representations.idm.CurrencyRepresentation;
 
 public class ModelToRepresentation {
 
-	public static CountryCodeRepresentation toRepresentation(CountryCodeModel model) {
+	public static CurrencyRepresentation toRepresentation(CurrencyModel model) {
 		if (model == null)
 			return null;
-		CountryCodeRepresentation rep = new CountryCodeRepresentation();
+		CurrencyRepresentation rep = new CurrencyRepresentation();
 
-		rep.setAlpha2Code(model.getAlpha2Code());
-		rep.setAlpha3Code(model.getAlpha3Code());
+		rep.setEntity(model.getEntity());
+		rep.setCurrency(model.getCurrency());
+		rep.setAlphabeticCode(model.getAlphabeticCode());
 		rep.setNumericCode(model.getNumericCode());
-		rep.setIndependent(model.isIndependent());
-		rep.setStatus(model.isStatus());
-		rep.setShortNameEn(model.getShortNameEn());
-		rep.setShortNameUppercaseEn(model.getShortNameUppercaseEn());
-		rep.setFullNameEn(model.getFullNameEn());
+		rep.setMinorUnit(model.getMinorUnit());
 
 		return rep;
-	}	
+	}
 
 }

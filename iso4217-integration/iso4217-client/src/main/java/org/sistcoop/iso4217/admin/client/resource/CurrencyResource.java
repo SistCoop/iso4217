@@ -19,32 +19,24 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.hibernate.validator.constraints.NotBlank;
-import org.sistcoop.iso4217.representations.idm.CountryCodeRepresentation;
+import org.sistcoop.iso4217.representations.idm.CurrencyRepresentation;
 
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-@Path("/countryCodes")
-public interface CountryCodesResource {
+@Path("/currency")
+public interface CurrencyResource {
 
 	@GET
-	@Path("/alpha2Code/{alpha2Code}")
-	public CountryCodeRepresentation findByAlpha2Code(
-			@PathParam("alpha2Code") 
+	@Path("/alphabeticCode/{alphabeticCode}")
+	public CurrencyRepresentation findByAlphabeticCode(
+			@PathParam("alphabeticCode") 
 			@NotNull 
 			@NotBlank
-			@Size(min = 2, max = 2) String alpha2Code);
-
-	@GET
-	@Path("/alpha3Code/{alpha3Code}")
-	public CountryCodeRepresentation findByAlpha3Code(
-			@PathParam("alpha3Code") 
-			@NotNull 
-			@NotBlank
-			@Size(min = 3, max = 3) String alpha3Code);
+			@Size(min = 3, max = 3) String alphabeticCode);
 	
 	@GET
 	@Path("/numericCode/{numericCode}")
-	public CountryCodeRepresentation findByNumericCode(
+	public CurrencyRepresentation findByNumericCode(
 			@PathParam("numericCode") 
 			@NotNull 
 			@NotBlank
@@ -53,29 +45,18 @@ public interface CountryCodesResource {
 	@POST
 	public Response create(
 			@NotNull
-			@Valid CountryCodeRepresentation countryCodeRepresentation);
+			@Valid CurrencyRepresentation currencyRepresentation);
 
 	@PUT
-	@Path("/alpha2Code/{alpha2Code}")
-	public void updateByAlpha2Code(
-			@PathParam("alpha2Code") 
+	@Path("/alphabeticCode/{alphabeticCode}")
+	public void updateByAlphabeticCode(
+			@PathParam("alphabeticCode") 
 			@NotNull 
 			@NotBlank
-			@Size(min = 2, max = 2) String alpha2Code, 
+			@Size(min = 3, max = 3) String alphabeticCode, 
 			
 			@NotNull
-			@Valid CountryCodeRepresentation countryCodeRepresentation);
-
-	@PUT
-	@Path("/alpha3Code/{alpha3Code}")
-	public void updateByAlpha3Code(
-			@PathParam("alpha3Code") 
-			@NotNull 
-			@NotBlank
-			@Size(min = 3, max = 3) String alpha3Code, 
-			
-			@NotNull
-			@Valid CountryCodeRepresentation countryCodeRepresentation);
+			@Valid CurrencyRepresentation currencyRepresentation);
 	
 	@PUT
 	@Path("/numericCode/{numericCode}")
@@ -86,23 +67,15 @@ public interface CountryCodesResource {
 			@Size(min = 3, max = 3) String numericCode, 
 			
 			@NotNull
-			@Valid CountryCodeRepresentation countryCodeRepresentation);
+			@Valid CurrencyRepresentation currencyRepresentation);
 	
 	@DELETE
-	@Path("/alpha2Code/{alpha2Code}")
-	public void removeByAlpha2Code(
-			@PathParam("alpha2Code") 
+	@Path("/alphabeticCode/{alphabeticCode}")
+	public void removeByAlphabeticCode(
+			@PathParam("alphabeticCode") 
 			@NotNull 
 			@NotBlank
-			@Size(min = 2, max = 2) String alpha2Code);
-
-	@DELETE
-	@Path("/alpha3Code/{alpha3Code}")
-	public void removeByAlpha3Code(
-			@PathParam("alpha3Code") 
-			@NotNull 
-			@NotBlank
-			@Size(min = 3, max = 3) String alpha3Code);
+			@Size(min = 3, max = 3) String alphabeticCode);
 	
 	@DELETE
 	@Path("/numericCode/{numericCode}")
@@ -113,7 +86,7 @@ public interface CountryCodesResource {
 			@Size(min = 3, max = 3) String numericCode);
 	
 	@GET	
-	public List<CountryCodeRepresentation> listAll(
+	public List<CurrencyRepresentation> listAll(
 			@QueryParam("filterText")
 			@Size(min = 1, max = 100) String filterText, 
 			

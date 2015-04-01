@@ -19,14 +19,14 @@ import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.jboss.shrinkwrap.resolver.api.maven.Maven;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.sistcoop.iso4217.models.CountryCodeModel;
-import org.sistcoop.iso4217.models.CountryCodeProvider;
-import org.sistcoop.iso4217.models.jpa.CountryCodeAdapter;
-import org.sistcoop.iso4217.models.jpa.JpaCountryCodeProvider;
+import org.sistcoop.iso4217.models.CurrencyModel;
+import org.sistcoop.iso4217.models.CurrencyProvider;
+import org.sistcoop.iso4217.models.jpa.CurrencyAdapter;
+import org.sistcoop.iso4217.models.jpa.JpaCurrencyProvider;
 import org.sistcoop.iso4217.models.jpa.entities.CurrencyEntity;
 import org.sistcoop.iso4217.models.utils.RepresentationToModel;
 import org.sistcoop.iso4217.provider.Provider;
-import org.sistcoop.iso4217.representations.idm.CountryCodeRepresentation;
+import org.sistcoop.iso4217.representations.idm.CurrencyRepresentation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,7 +40,7 @@ public class RepresentationToModelTest {
 	private EntityManager em;
 		
 	@Inject
-	private CountryCodeProvider countryCodeProvider;
+	private CurrencyProvider currencyProvider;
 	
 	@Inject
 	private RepresentationToModel representationToModel;
@@ -54,17 +54,17 @@ public class RepresentationToModelTest {
 		WebArchive war = ShrinkWrap.create(WebArchive.class, "test.war")
 				/**Model to representation**/
 				.addClass(RepresentationToModel.class)
-				.addClass(CountryCodeRepresentation.class)
+				.addClass(CurrencyRepresentation.class)
 				
 				/**persona-model-api**/
 				.addClass(Provider.class)										
-				.addClass(CountryCodeProvider.class)				
+				.addClass(CurrencyProvider.class)				
 				
-				.addPackage(CountryCodeModel.class.getPackage())				
+				.addPackage(CurrencyModel.class.getPackage())				
 												
 				/**persona-model-jpa**/				
-				.addClass(JpaCountryCodeProvider.class)
-				.addClass(CountryCodeAdapter.class)																						
+				.addClass(JpaCurrencyProvider.class)
+				.addClass(CurrencyAdapter.class)																						
 				
 				.addPackage(CurrencyEntity.class.getPackage())
 				
@@ -78,28 +78,22 @@ public class RepresentationToModelTest {
 	}
 	
 	@Test
-	public void commit() {
-		CountryCodeRepresentation rep = new CountryCodeRepresentation();
-		rep.setAlpha2Code("PE");
-		rep.setAlpha3Code("PER");
-		rep.setNumericCode("051");
-		rep.setIndependent(true);
-		rep.setStatus(true);
-		rep.setShortNameEn("Peru");
-		rep.setShortNameUppercaseEn("PERU");
-		rep.setFullNameEn("Republic of Peru");
+	public void representatioToModel() {
+		CurrencyRepresentation rep = new CurrencyRepresentation();
+		rep.setEntity("PERU");;
+		rep.setCurrency("Nuevo Sol");
+		rep.setAlphabeticCode("PEN");
+		rep.setNumericCode("604");	
+		rep.setMinorUnit(2);
 		
-		CountryCodeModel model = representationToModel.createCountryCode(rep, countryCodeProvider);
+		CurrencyModel model = representationToModel.createCurrency(rep, currencyProvider);
 					
 		assertThat(model, is(notNullValue()));
-		assertThat(model.getAlpha2Code(), is(notNullValue()));
-		assertThat(model.getAlpha3Code(), is(notNullValue()));
+		assertThat(model.getEntity(), is(notNullValue()));
+		assertThat(model.getCurrency(), is(notNullValue()));
+		assertThat(model.getAlphabeticCode(), is(notNullValue()));
 		assertThat(model.getNumericCode(), is(notNullValue()));
-		assertThat(model.isIndependent(), is(notNullValue()));
-		assertThat(model.isStatus(), is(notNullValue()));
-		assertThat(model.getShortNameEn(), is(notNullValue()));
-		assertThat(model.getShortNameUppercaseEn(), is(notNullValue()));
-		assertThat(model.getFullNameEn(), is(notNullValue()));
+		assertThat(model.getMinorUnit(), is(notNullValue()));
 		
 	}
 	
