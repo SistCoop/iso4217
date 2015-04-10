@@ -105,7 +105,7 @@ public interface CurrencyResource {
 	 * Denominations*/
 	
 	@GET	
-	@Path("/alphabeticCode/{alphabeticCode}")	
+	@Path("/alphabeticCode/{alphabeticCode}/denominations")	
 	public List<DenominationRepresentation> getDenominationsByAlphabeticCode(
 			@PathParam("alphabeticCode") 
 			@NotNull 
@@ -113,10 +113,11 @@ public interface CurrencyResource {
 			@Size(min = 3, max = 3) String alphabeticCode);
 	
 	@GET		
-	@Path("/numericCode/{numericCode}")
+	@Path("/numericCode/{numericCode}/denominations")
 	public List<DenominationRepresentation> getDenominationsByNumericCode(
 			@PathParam("numericCode") 
 			@NotNull 
 			@NotBlank
 			@Size(min = 3, max = 3) String numericCode);
+	
 }
