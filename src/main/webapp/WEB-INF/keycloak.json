@@ -4,6 +4,5 @@
   "bearer-only": true,
   "ssl-required": "external",
   "resource": "iso4217",
-  "use-resource-role-mappings": true,
-  "enable-cors": true
+  "use-resource-role-mappings": true
 }
