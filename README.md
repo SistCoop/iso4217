@@ -18,6 +18,7 @@ Es un paquete que permite administrar datos de países segun el estandar iso4217
 | DELETE        | "/currency/alpha2Code/{numericCode}"              | Elimina uno segun numericCode         |
 | GET           | "/currency?filterText&firstResult&maxResults"     | Busca segun parametros                |
 
+
 * Denomination ("/currency/{id}/denominations")
 
 | Method        | URL                                                   | Descripcion                           |
@@ -26,7 +27,7 @@ Es un paquete que permite administrar datos de países segun el estandar iso4217
 | GET           | "/currency/numericCode/{numericCode}/denominations"   | Denominaciones segun numericCode      |
 
 
-Los objetos countryCodes tienen la siguiente estructura:
+Los objetos Currency tienen la siguiente estructura:
 
 ```json
 "currency": {
@@ -37,6 +38,8 @@ Los objetos countryCodes tienen la siguiente estructura:
 	"minorUnit": "Integer"
 }
 ```
+
+Los objetos Denomination tienen la siguiente estructura:
 
 ```json
 "denomination": {
