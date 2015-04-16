@@ -7,7 +7,6 @@ Es un paquete que permite administrar datos de países segun el estandar iso4217
 ### Resources
 * Currency ("/currency")
 
-
 | Method        | URL                                               | Descripcion                           |
 | :------------ |:--------------------------------------------------|:--------------------------------------|
 | GET           | "/currency/alphabeticCode/{alpha2Code}"           | Busca uno segun alphabeticCode        |
@@ -19,6 +18,7 @@ Es un paquete que permite administrar datos de países segun el estandar iso4217
 | DELETE        | "/currency/alpha2Code/{numericCode}"              | Elimina uno segun numericCode         |
 | GET           | "/currency?filterText&firstResult&maxResults"     | Busca segun parametros                |
 
+* Denomination ("/currency/{id}/denominations")
 
 | Method        | URL                                                   | Descripcion                           |
 | :------------ |:------------------------------------------------------|:--------------------------------------|
