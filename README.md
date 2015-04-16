@@ -7,6 +7,7 @@ Es un paquete que permite administrar datos de países segun el estandar iso4217
 ### Resources
 * Currency ("/currency")
 
+
 | Currency                                                                                                  |
 | Method        | URL                                               | Descripcion                           |
 | :------------ |:--------------------------------------------------|:--------------------------------------|
@@ -19,20 +20,22 @@ Es un paquete que permite administrar datos de países segun el estandar iso4217
 | DELETE        | "/currency/alpha2Code/{numericCode}"              | Elimina uno segun numericCode         |
 | GET           | "/currency?filterText&firstResult&maxResults"     | Busca segun parametros                |
 
+
 | Denominations                                                                                                 |
 | Method        | URL                                                   | Descripcion                           |
 | :------------ |:------------------------------------------------------|:--------------------------------------|
 | GET           | "/currency/alphabeticCode/{alpha2Code}/denominations" | Denominaciones segun alphabeticCode   |
 | GET           | "/currency/numericCode/{numericCode}/denominations"   | Denominaciones segun numericCode      |
 
+
 Los objetos countryCodes tienen la siguiente estructura:
 
 ```json
 "currency": {
-    "entity": "String"
-	"currency": "String"
-	"alphabeticCode": "String"
-	"numericCode": "String"
+    "entity": "String",
+	"currency": "String",
+	"alphabeticCode": "String",
+	"numericCode": "String",
 	"minorUnit": Integer
 }
 ```
