@@ -48,7 +48,7 @@ public class DenominationEntity implements Serializable {
 	@NotNull
 	@NaturalId
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(foreignKey = @ForeignKey)
+	@JoinColumn(foreignKey = @ForeignKey, name = "CURRENCY_ID")
 	public CurrencyEntity getCurrency() {
 		return currency;
 	}
