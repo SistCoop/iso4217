@@ -107,7 +107,7 @@ public class CurrencyEntity implements Serializable {
 	}
 
 	@NotNull
-	@Min(value = 1)
+	@Min(value = 0)
 	public int getMinorUnit() {
 		return minorUnit;
 	}
