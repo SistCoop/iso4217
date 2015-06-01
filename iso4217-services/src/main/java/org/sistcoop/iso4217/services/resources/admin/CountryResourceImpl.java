@@ -3,6 +3,7 @@ package org.sistcoop.iso4217.services.resources.admin;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.ws.rs.InternalServerErrorException;
@@ -10,6 +11,8 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
+import org.jboss.ejb3.annotation.SecurityDomain;
+import org.sistcoop.iso4217.admin.client.Roles;
 import org.sistcoop.iso4217.admin.client.resource.CurrencyResource;
 import org.sistcoop.iso4217.models.CurrencyModel;
 import org.sistcoop.iso4217.models.CurrencyProvider;
@@ -20,6 +23,7 @@ import org.sistcoop.iso4217.representations.idm.CurrencyRepresentation;
 import org.sistcoop.iso4217.representations.idm.DenominationRepresentation;
 
 @Stateless
+@SecurityDomain("keycloak")
 public class CountryResourceImpl implements CurrencyResource {
 
 	@Inject
@@ -31,24 +35,28 @@ public class CountryResourceImpl implements CurrencyResource {
 	@Context
 	private UriInfo uriInfo;
 
+	@RolesAllowed(Roles.ver_currencies)
 	@Override
 	public CurrencyRepresentation findByAlphabeticCode(String alphabeticCode) {
 		CurrencyModel model = currencyProvider.getCurrencyByAlphabeticCode(alphabeticCode);
 		return ModelToRepresentation.toRepresentation(model);
 	}
 
+	@RolesAllowed(Roles.ver_currencies)
 	@Override
 	public CurrencyRepresentation findByNumericCode(String numericCode) {
 		CurrencyModel model = currencyProvider.getCurrencyByNumericCode(numericCode);
 		return ModelToRepresentation.toRepresentation(model);
 	}
 
+	@RolesAllowed(Roles.ver_currencies)
 	@Override
 	public Response create(CurrencyRepresentation currencyRepresentation) {
 		CurrencyModel model = representationToModel.createCurrency(currencyRepresentation, currencyProvider);
 		return Response.created(uriInfo.getAbsolutePathBuilder().path(model.getId().toString()).build()).header("Access-Control-Expose-Headers", "Location").entity(model.getId()).build();
 	}
 
+	
 	@Override
 	public void updateByAlphabeticCode(String alphabeticCode, CurrencyRepresentation currencyRepresentation) {
 		CurrencyModel model = currencyProvider.getCurrencyByAlphabeticCode(alphabeticCode);
@@ -59,6 +67,7 @@ public class CountryResourceImpl implements CurrencyResource {
 		model.commit();
 	}
 
+	@RolesAllowed(Roles.ver_currencies)
 	@Override
 	public void updateByNumericCode(String numericCode, CurrencyRepresentation currencyRepresentation) {
 		CurrencyModel model = currencyProvider.getCurrencyByNumericCode(numericCode);
@@ -69,6 +78,7 @@ public class CountryResourceImpl implements CurrencyResource {
 		model.commit();
 	}
 
+	@RolesAllowed(Roles.ver_currencies)
 	@Override
 	public void removeByAlphabeticCode(String alphabeticCode) {
 		CurrencyModel model = currencyProvider.getCurrencyByAlphabeticCode(alphabeticCode);
@@ -77,6 +87,7 @@ public class CountryResourceImpl implements CurrencyResource {
 			throw new InternalServerErrorException();
 	}
 
+	@RolesAllowed(Roles.ver_currencies)
 	@Override
 	public void removeByNumericCode(String numericCode) {
 		CurrencyModel model = currencyProvider.getCurrencyByNumericCode(numericCode);
@@ -85,6 +96,7 @@ public class CountryResourceImpl implements CurrencyResource {
 			throw new InternalServerErrorException();
 	}
 
+	@RolesAllowed(Roles.ver_currencies)
 	@Override
 	public List<CurrencyRepresentation> listAll(String filterText, Integer firstResult, Integer maxResults) {
 		List<CurrencyRepresentation> results = new ArrayList<CurrencyRepresentation>();
@@ -108,6 +120,7 @@ public class CountryResourceImpl implements CurrencyResource {
 		return results;
 	}
 
+	@RolesAllowed(Roles.ver_currencies)
 	@Override
 	public int countAll() {
 		int count = currencyProvider.getCurrencyCount();
@@ -117,6 +130,7 @@ public class CountryResourceImpl implements CurrencyResource {
 	/**
 	 * Denominations*/
 	
+	@RolesAllowed(Roles.ver_currencies)
 	@Override
 	public List<DenominationRepresentation> getDenominationsByAlphabeticCode(String alphabeticCode) {
 		CurrencyModel model = currencyProvider.getCurrencyByAlphabeticCode(alphabeticCode);
@@ -128,6 +142,7 @@ public class CountryResourceImpl implements CurrencyResource {
 		return result;
 	}
 
+	@RolesAllowed(Roles.ver_currencies)
 	@Override
 	public List<DenominationRepresentation> getDenominationsByNumericCode(String numericCode) {
 		CurrencyModel model = currencyProvider.getCurrencyByNumericCode(numericCode);
