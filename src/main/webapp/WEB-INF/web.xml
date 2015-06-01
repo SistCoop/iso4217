@@ -6,7 +6,7 @@
 
 	<context-param>
 		<param-name>keycloak.config.resolver</param-name>
-		<param-value>org.sistcoop.cooperativa.PathBasedKeycloakConfigResolver</param-value>
+		<param-value>org.sistcoop.iso4217.PathBasedKeycloakConfigResolver</param-value>
 	</context-param>
 	
 	<!-- keycloak aplication name -->
