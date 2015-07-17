@@ -14,8 +14,8 @@ publishing {
 
             pom.withXml {
                 def root = asNode()
-                root.appendNode('name', 'iso3166')
-                root.appendNode('description', 'iso3166 war.')
+                root.appendNode('name', 'iso4217')
+                root.appendNode('description', 'iso4217 war.')
             }
         }
     }
