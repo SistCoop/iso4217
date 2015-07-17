@@ -10,6 +10,7 @@ import javax.ws.rs.NotFoundException;
 import javax.ws.rs.PathParam;
 
 import org.sistcoop.iso4217.admin.client.resource.CurrencyResource;
+import org.sistcoop.iso4217.admin.client.resource.DenominationsResource;
 import org.sistcoop.iso4217.models.CurrencyModel;
 import org.sistcoop.iso4217.models.CurrencyProvider;
 import org.sistcoop.iso4217.models.utils.ModelToRepresentation;
@@ -22,16 +23,19 @@ public class CurrencyResourceImpl implements CurrencyResource {
     private String currency;
 
     @Inject
-    private CurrencyProvider countryCodeProvider;
+    private CurrencyProvider currencyProvider;
+    
+    @Inject
+    private DenominationsResource denominationsResource;
 
     private CurrencyModel getCurrencyModel() {
         if (currency.length() == 3) {
             Pattern pattern = Pattern.compile("^[0-9]+$");
             Matcher matcher = pattern.matcher(currency);
             if (matcher.matches()) {
-                return countryCodeProvider.findByNumericCode(currency);
+                return currencyProvider.findByNumericCode(currency);
             } else {
-                return countryCodeProvider.findByAlphabeticCode(currency);
+                return currencyProvider.findByAlphabeticCode(currency);
             }
         } else {
             return null;
@@ -66,10 +70,15 @@ public class CurrencyResourceImpl implements CurrencyResource {
     @Override
     public void remove() {
         CurrencyModel model = getCurrencyModel();
-        boolean result = countryCodeProvider.remove(model);
+        boolean result = currencyProvider.remove(model);
         if (!result) {
             throw new InternalServerErrorException();
         }
+    }
+
+    @Override
+    public DenominationsResource denomination() {
+       return denominationsResource;
     }
 
 }

@@ -64,4 +64,11 @@ public interface CurrencyResource {
     @DELETE
     public void remove();
 
+    /**
+     * @param currency
+     *            Id del Currency.
+     */
+    @Path("/denominations")
+    public DenominationsResource denomination();
+
 }
