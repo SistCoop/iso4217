@@ -1,123 +1,67 @@
 package org.sistcoop.iso4217.admin.client.resource;
 
-import java.util.List;
-
-import javax.validation.Valid;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.ejb.EJBException;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
 
-import org.hibernate.validator.constraints.NotBlank;
 import org.sistcoop.iso4217.representations.idm.CurrencyRepresentation;
-import org.sistcoop.iso4217.representations.idm.DenominationRepresentation;
 
-@Produces(MediaType.APPLICATION_JSON)
-@Consumes(MediaType.APPLICATION_JSON)
-@Path("/currency")
 public interface CurrencyResource {
 
-	@GET
-	@Path("/alphabeticCode/{alphabeticCode}")
-	public CurrencyRepresentation findByAlphabeticCode(
-			@PathParam("alphabeticCode") 
-			@NotNull 
-			@NotBlank
-			@Size(min = 3, max = 3) String alphabeticCode);
-	
-	@GET
-	@Path("/numericCode/{numericCode}")
-	public CurrencyRepresentation findByNumericCode(
-			@PathParam("numericCode") 
-			@NotNull 
-			@NotBlank
-			@Size(min = 3, max = 3) String numericCode);	        
+    /**
+     * Obtener un Currency segun id.
+     * 
+     * @summary Obtener Currency
+     * @statuscode 200 Si el objeto fue encontrado.
+     * @return CountryCodeRepresentation encontrado.
+     * @throws EJBException
+     *             datos validos pero ocurrio un error interno.
+     */
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public CurrencyRepresentation currency();
 
-	@POST
-	public Response create(
-			@NotNull
-			@Valid CurrencyRepresentation currencyRepresentation);
+    /**
+     * Actualizar Currency segun los datos enviados.
+     * 
+     * @summary Actualizar Currency
+     * @param representation
+     *            Datos nuevos del objeto.
+     * @statuscode 200 Si el objeto fue actualizado satisfactoriamente.
+     * @throws EJBException
+     *             datos validos pero ocurrio un error interno.
+     */
+    @PUT
+    @Consumes(MediaType.APPLICATION_JSON)
+    public void update(CurrencyRepresentation representation);
 
-	@PUT
-	@Path("/alphabeticCode/{alphabeticCode}")
-	public void updateByAlphabeticCode(
-			@PathParam("alphabeticCode") 
-			@NotNull 
-			@NotBlank
-			@Size(min = 3, max = 3) String alphabeticCode, 
-			
-			@NotNull
-			@Valid CurrencyRepresentation currencyRepresentation);
-	
-	@PUT
-	@Path("/numericCode/{numericCode}")
-	public void updateByNumericCode(
-			@PathParam("numericCode") 
-			@NotNull 
-			@NotBlank
-			@Size(min = 3, max = 3) String numericCode, 
-			
-			@NotNull
-			@Valid CurrencyRepresentation currencyRepresentation);
-	
-	@DELETE
-	@Path("/alphabeticCode/{alphabeticCode}")	
-	public void removeByAlphabeticCode(
-			@PathParam("alphabeticCode") 
-			@NotNull 
-			@NotBlank
-			@Size(min = 3, max = 3) String alphabeticCode);
-	
-	@DELETE
-	@Path("/numericCode/{numericCode}")
-	public void removeByNumericCode(
-			@PathParam("numericCode") 
-			@NotNull 
-			@NotBlank
-			@Size(min = 3, max = 3) String numericCode);
-	
-	@GET	
-	public List<CurrencyRepresentation> listAll(
-			@QueryParam("filterText")
-			@Size(min = 1, max = 100) String filterText, 
-			
-			@QueryParam("firstResult") 
-			@Min(value = 0) Integer firstResult, 
-			
-			@QueryParam("maxResults") 
-			@Min(value = 1) Integer maxResults);
+    /**
+     * Deshabilitar el Currency.
+     * 
+     * @summary Deshabilitar Currency
+     * @statuscode 200 Si el objeto fue desactivado satisfactoriamente.
+     * @throws EJBException
+     *             datos validos pero ocurrio un error interno.
+     */
+    @POST
+    @Path("/disable")
+    public void disable();
 
-	@GET
-	@Path("/count")	
-	public int countAll();
-	
-	/**
-	 * Denominations*/
-	
-	@GET	
-	@Path("/alphabeticCode/{alphabeticCode}/denominations")	
-	public List<DenominationRepresentation> getDenominationsByAlphabeticCode(
-			@PathParam("alphabeticCode") 
-			@NotNull 
-			@NotBlank
-			@Size(min = 3, max = 3) String alphabeticCode);
-	
-	@GET		
-	@Path("/numericCode/{numericCode}/denominations")
-	public List<DenominationRepresentation> getDenominationsByNumericCode(
-			@PathParam("numericCode") 
-			@NotNull 
-			@NotBlank
-			@Size(min = 3, max = 3) String numericCode);
-	
+    /**
+     * Eliminar el Currency.
+     * 
+     * @summary Eliminar CountryCode
+     * @statuscode 200 Si el objeto fue elimado satisfactoriamente.
+     * @throws EJBException
+     *             datos validos pero ocurrio un error interno.
+     */
+    @DELETE
+    public void remove();
+
 }

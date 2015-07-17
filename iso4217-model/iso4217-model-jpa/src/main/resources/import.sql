@@ -16,305 +16,304 @@
 --
 
 -- You can use this file to load seed data into the database using SQL statements
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (1, 'AFGHANISTAN', 'Afghani', '971', 'AFN', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (2, 'ï¿½LAND ISLANDS', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (3, 'ALBANIA', 'Lek', '008', 'ALL', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (4, 'ALGERIA', 'Algerian Dinar', '012', 'DZD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (5, 'AMERICAN SAMOA', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (6, 'ANDORRA', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (7, 'ANGOLA', 'Kwanza', '973', 'AOA', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (8, 'ANGUILLA', 'East Caribbean Dollar', '951', 'XCD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (9, 'ANTIGUA AND BARBUDA', 'East Caribbean Dollar', '951', 'XCD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (10, 'ARGENTINA', 'Argentine Peso', '032', 'ARS', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (11, 'ARMENIA', 'Armenian Dram', '051', 'AMD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (12, 'ARUBA', 'Aruban Florin', '533', 'AWG', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (13, 'AUSTRALIA', 'Australian Dollar', '036', 'AUD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (14, 'AUSTRIA', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (15, 'AZERBAIJAN', 'Azerbaijanian Manat', '944', 'AZN', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (16, 'BAHAMAS', 'Bahamian Dollar', '044', 'BSD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (17, 'BAHRAIN', 'Bahraini Dinar', '048', 'BHD', 3)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (18, 'BANGLADESH', 'Taka', '050', 'BDT', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (19, 'BARBADOS', 'Barbados Dollar', '052', 'BBD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (20, 'BELARUS', 'Belarussian Ruble', '974', 'BYR', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (21, 'BELGIUM', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (22, 'BELIZE', 'Belize Dollar', '084', 'BZD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (23, 'BENIN', 'CFA Franc BCEAO', '952', 'XOF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (24, 'BERMUDA', 'Bermudian Dollar', '060', 'BMD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (25, 'BHUTAN', 'Ngultrum', '064', 'BTN', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (26, 'BHUTAN', 'Indian Rupee', '356', 'INR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (27, 'BOLIVIA, PLURINATIONAL STATE OF', 'Boliviano', '068', 'BOB', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (28, 'BOLIVIA, PLURINATIONAL STATE OF', 'Mvdol', '984', 'BOV', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (29, 'BONAIRE, SINT EUSTATIUS AND SABA', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (30, 'BOSNIA AND HERZEGOVINA', 'Convertible Mark', '977', 'BAM', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (31, 'BOTSWANA', 'Pula', '072', 'BWP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (32, 'BOUVET ISLAND', 'Norwegian Krone', '578', 'NOK', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (33, 'BRAZIL', 'Brazilian Real', '986', 'BRL', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (34, 'BRITISH INDIAN OCEAN TERRITORY', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (35, 'BRUNEI DARUSSALAM', 'Brunei Dollar', '096', 'BND', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (36, 'BULGARIA', 'Bulgarian Lev', '975', 'BGN', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (37, 'BURKINA FASO', 'CFA Franc BCEAO', '952', 'XOF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (38, 'BURUNDI', 'Burundi Franc', '108', 'BIF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (39, 'CAMBODIA', 'Riel', '116', 'KHR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (40, 'CAMEROON', 'CFA Franc BEAC', '950', 'XAF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (41, 'CANADA', 'Canadian Dollar', '124', 'CAD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (42, 'CABO VERDE', 'Cabo Verde Escudo', '132', 'CVE', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (43, 'CAYMAN ISLANDS', 'Cayman Islands Dollar', '136', 'KYD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (44, 'CENTRAL AFRICAN REPUBLIC', 'CFA Franc BEAC', '950', 'XAF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (45, 'CHAD', 'CFA Franc BEAC', '950', 'XAF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (46, 'CHILE', 'Unidad de Fomento', '990', 'CLF', 4)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (47, 'CHILE', 'Chilean Peso', '152', 'CLP', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (48, 'CHINA', 'Yuan Renminbi', '156', 'CNY', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (49, 'CHRISTMAS ISLAND', 'Australian Dollar', '036', 'AUD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (50, 'COCOS (KEELING) ISLANDS', 'Australian Dollar', '036', 'AUD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (51, 'COLOMBIA', 'Colombian Peso', '170', 'COP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (52, 'COLOMBIA', 'Unidad de Valor Real', '970', 'COU', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (53, 'COMOROS', 'Comoro Franc', '174', 'KMF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (54, 'CONGO', 'CFA Franc BEAC', '950', 'XAF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (55, 'CONGO, DEMOCRATIC REPUBLIC OF THE ', 'Congolese Franc', '976', 'CDF', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (56, 'COOK ISLANDS', 'New Zealand Dollar', '554', 'NZD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (57, 'COSTA RICA', 'Costa Rican Colon', '188', 'CRC', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (58, 'Cï¿½TE D"IVOIRE', 'CFA Franc BCEAO', '952', 'XOF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (59, 'CROATIA', 'Croatian Kuna', '191', 'HRK', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (60, 'CUBA', 'Peso Convertible', '931', 'CUC', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (61, 'CUBA', 'Cuban Peso', '192', 'CUP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (62, 'CURAï¿½AO', 'Netherlands Antillean Guilder', '532', 'ANG', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (63, 'CYPRUS', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (64, 'CZECH REPUBLIC', 'Czech Koruna', '203', 'CZK', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (65, 'DENMARK', 'Danish Krone', '208', 'DKK', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (66, 'DJIBOUTI', 'Djibouti Franc', '262', 'DJF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (67, 'DOMINICA', 'East Caribbean Dollar', '951', 'XCD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (68, 'DOMINICAN REPUBLIC', 'Dominican Peso', '214', 'DOP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (69, 'ECUADOR', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (70, 'EGYPT', 'Egyptian Pound', '818', 'EGP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (71, 'EL SALVADOR', 'El Salvador Colon', '222', 'SVC', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (72, 'EL SALVADOR', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (73, 'EQUATORIAL GUINEA', 'CFA Franc BEAC', '950', 'XAF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (74, 'ERITREA', 'Nakfa', '232', 'ERN', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (75, 'ESTONIA', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (76, 'ETHIOPIA', 'Ethiopian Birr', '230', 'ETB', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (77, 'EUROPEAN UNION', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (78, 'FALKLAND ISLANDS (MALVINAS)', 'Falkland Islands Pound', '238', 'FKP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (79, 'FAROE ISLANDS', 'Danish Krone', '208', 'DKK', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (80, 'FIJI', 'Fiji Dollar', '242', 'FJD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (81, 'FINLAND', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (82, 'FRANCE', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (83, 'FRENCH GUIANA', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (84, 'FRENCH POLYNESIA', 'CFP Franc', '953', 'XPF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (85, 'FRENCH SOUTHERN TERRITORIES', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (86, 'GABON', 'CFA Franc BEAC', '950', 'XAF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (87, 'GAMBIA', 'Dalasi', '270', 'GMD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (88, 'GEORGIA', 'Lari', '981', 'GEL', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (89, 'GERMANY', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (90, 'GHANA', 'Ghana Cedi', '936', 'GHS', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (91, 'GIBRALTAR', 'Gibraltar Pound', '292', 'GIP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (92, 'GREECE', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (93, 'GREENLAND', 'Danish Krone', '208', 'DKK', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (94, 'GRENADA', 'East Caribbean Dollar', '951', 'XCD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (95, 'GUADELOUPE', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (96, 'GUAM', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (97, 'GUATEMALA', 'Quetzal', '320', 'GTQ', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (98, 'GUERNSEY', 'Pound Sterling', '826', 'GBP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (99, 'GUINEA', 'Guinea Franc', '324', 'GNF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (100, 'GUINEA-BISSAU', 'CFA Franc BCEAO', '952', 'XOF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (101, 'GUYANA', 'Guyana Dollar', '328', 'GYD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (102, 'HAITI', 'Gourde', '332', 'HTG', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (103, 'HAITI', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (104, 'HEARD ISLAND AND McDONALD ISLANDS', 'Australian Dollar', '036', 'AUD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (105, 'HOLY SEE (VATICAN CITY STATE)', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (106, 'HONDURAS', 'Lempira', '340', 'HNL', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (107, 'HONG KONG', 'Hong Kong Dollar', '344', 'HKD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (108, 'HUNGARY', 'Forint', '348', 'HUF', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (109, 'ICELAND', 'Iceland Krona', '352', 'ISK', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (110, 'INDIA', 'Indian Rupee', '356', 'INR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (111, 'INDONESIA', 'Rupiah', '360', 'IDR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (112, 'INTERNATIONAL MONETARY FUND (IMF)', 'SDR (Special Drawing Right)', '960', 'XDR', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (113, 'IRAN, ISLAMIC REPUBLIC OF', 'Iranian Rial', '364', 'IRR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (114, 'IRAQ', 'Iraqi Dinar', '368', 'IQD', 3)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (115, 'IRELAND', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (116, 'ISLE OF MAN', 'Pound Sterling', '826', 'GBP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (117, 'ISRAEL', 'New Israeli Sheqel', '376', 'ILS', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (118, 'ITALY', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (119, 'JAMAICA', 'Jamaican Dollar', '388', 'JMD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (120, 'JAPAN', 'Yen', '392', 'JPY', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (121, 'JERSEY', 'Pound Sterling', '826', 'GBP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (122, 'JORDAN', 'Jordanian Dinar', '400', 'JOD', 3)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (123, 'KAZAKHSTAN', 'Tenge', '398', 'KZT', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (124, 'KENYA', 'Kenyan Shilling', '404', 'KES', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (125, 'KIRIBATI', 'Australian Dollar', '036', 'AUD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (126, 'KOREA, DEMOCRATIC PEOPLEï¿½S REPUBLIC OF', 'North Korean Won', '408', 'KPW', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (127, 'KOREA, REPUBLIC OF', 'Won', '410', 'KRW', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (128, 'KUWAIT', 'Kuwaiti Dinar', '414', 'KWD', 3)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (129, 'KYRGYZSTAN', 'Som', '417', 'KGS', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (130, 'LAO PEOPLEï¿½S DEMOCRATIC REPUBLIC', 'Kip', '418', 'LAK', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (131, 'LATVIA', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (132, 'LEBANON', 'Lebanese Pound', '422', 'LBP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (133, 'LESOTHO', 'Loti', '426', 'LSL', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (134, 'LESOTHO', 'Rand', '710', 'ZAR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (135, 'LIBERIA', 'Liberian Dollar', '430', 'LRD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (136, 'LIBYA', 'Libyan Dinar', '434', 'LYD', 3)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (137, 'LIECHTENSTEIN', 'Swiss Franc', '756', 'CHF', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (138, 'LITHUANIA', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (139, 'LUXEMBOURG', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (140, 'MACAO', 'Pataca', '446', 'MOP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (141, 'MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF', 'Denar', '807', 'MKD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (142, 'MADAGASCAR', 'Malagasy Ariary', '969', 'MGA', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (143, 'MALAWI', 'Kwacha', '454', 'MWK', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (144, 'MALAYSIA', 'Malaysian Ringgit', '458', 'MYR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (145, 'MALDIVES', 'Rufiyaa', '462', 'MVR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (146, 'MALI', 'CFA Franc BCEAO', '952', 'XOF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (147, 'MALTA', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (148, 'MARSHALL ISLANDS', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (149, 'MARTINIQUE', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (150, 'MAURITANIA', 'Ouguiya', '478', 'MRO', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (151, 'MAURITIUS', 'Mauritius Rupee', '480', 'MUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (152, 'MAYOTTE', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (153, 'MEMBER COUNTRIES OF THE AFRICAN DEVELOPMENT BANK GROUP', 'ADB Unit of Account', '965', 'XUA', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (154, 'MEXICO', 'Mexican Peso', '484', 'MXN', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (155, 'MEXICO', 'Mexican Unidad de Inversion (UDI)', '979', 'MXV', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (156, 'MICRONESIA, FEDERATED STATES OF', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (157, 'MOLDOVA, REPUBLIC OF', 'Moldovan Leu', '498', 'MDL', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (158, 'MONACO', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (159, 'MONGOLIA', 'Tugrik', '496', 'MNT', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (160, 'MONTENEGRO', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (161, 'MONTSERRAT', 'East Caribbean Dollar', '951', 'XCD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (162, 'MOROCCO', 'Moroccan Dirham', '504', 'MAD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (163, 'MOZAMBIQUE', 'Mozambique Metical', '943', 'MZN', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (164, 'MYANMAR', 'Kyat', '104', 'MMK', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (165, 'NAMIBIA', 'Namibia Dollar', '516', 'NAD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (166, 'NAMIBIA', 'Rand', '710', 'ZAR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (167, 'NAURU', 'Australian Dollar', '036', 'AUD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (168, 'NEPAL', 'Nepalese Rupee', '524', 'NPR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (169, 'NETHERLANDS', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (170, 'NEW CALEDONIA', 'CFP Franc', '953', 'XPF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (171, 'NEW ZEALAND', 'New Zealand Dollar', '554', 'NZD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (172, 'NICARAGUA', 'Cordoba Oro', '558', 'NIO', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (173, 'NIGER', 'CFA Franc BCEAO', '952', 'XOF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (174, 'NIGERIA', 'Naira', '566', 'NGN', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (175, 'NIUE', 'New Zealand Dollar', '554', 'NZD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (176, 'NORFOLK ISLAND', 'Australian Dollar', '036', 'AUD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (177, 'NORTHERN MARIANA ISLANDS', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (178, 'NORWAY', 'Norwegian Krone', '578', 'NOK', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (179, 'OMAN', 'Rial Omani', '512', 'OMR', 3)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (180, 'PAKISTAN', 'Pakistan Rupee', '586', 'PKR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (181, 'PALAU', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (182, 'PANAMA', 'Balboa', '590', 'PAB', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (183, 'PANAMA', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (184, 'PAPUA NEW GUINEA', 'Kina', '598', 'PGK', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (185, 'PARAGUAY', 'Guarani', '600', 'PYG', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (186, 'PERU', 'Nuevo Sol', '604', 'PEN', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (187, 'PHILIPPINES', 'Philippine Peso', '608', 'PHP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (188, 'PITCAIRN', 'New Zealand Dollar', '554', 'NZD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (189, 'POLAND', 'Zloty', '985', 'PLN', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (190, 'PORTUGAL', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (191, 'PUERTO RICO', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (192, 'QATAR', 'Qatari Rial', '634', 'QAR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (193, 'Rï¿½UNION', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (194, 'ROMANIA', 'New Romanian Leu', '946', 'RON', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (195, 'RUSSIAN FEDERATION', 'Russian Ruble', '643', 'RUB', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (196, 'RWANDA', 'Rwanda Franc', '646', 'RWF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (197, 'SAINT BARTHï¿½LEMY', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (198, 'SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA', 'Saint Helena Pound', '654', 'SHP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (199, 'SAINT KITTS AND NEVIS', 'East Caribbean Dollar', '951', 'XCD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (200, 'SAINT LUCIA', 'East Caribbean Dollar', '951', 'XCD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (201, 'SAINT MARTIN (FRENCH PART)', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (202, 'SAINT PIERRE AND MIQUELON', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (203, 'SAINT VINCENT AND THE GRENADINES', 'East Caribbean Dollar', '951', 'XCD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (204, 'SAMOA', 'Tala', '882', 'WST', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (205, 'SAN MARINO', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (206, 'SAO TOME AND PRINCIPE', 'Dobra', '678', 'STD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (207, 'SAUDI ARABIA', 'Saudi Riyal', '682', 'SAR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (208, 'SENEGAL', 'CFA Franc BCEAO', '952', 'XOF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (209, 'SERBIA', 'Serbian Dinar', '941', 'RSD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (210, 'SEYCHELLES', 'Seychelles Rupee', '690', 'SCR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (211, 'SIERRA LEONE', 'Leone', '694', 'SLL', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (212, 'SINGAPORE', 'Singapore Dollar', '702', 'SGD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (213, 'SINT MAARTEN (DUTCH PART)', 'Netherlands Antillean Guilder', '532', 'ANG', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (214, 'SISTEMA UNITARIO DE COMPENSACION REGIONAL DE PAGOS SUCRE', 'Sucre', '994', 'XSU', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (215, 'SLOVAKIA', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (216, 'SLOVENIA', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (217, 'SOLOMON ISLANDS', 'Solomon Islands Dollar', '090', 'SBD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (218, 'SOMALIA', 'Somali Shilling', '706', 'SOS', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (219, 'SOUTH AFRICA', 'Rand', '710', 'ZAR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (221, 'SOUTH SUDAN', 'South Sudanese Pound', '728', 'SSP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (222, 'SPAIN', 'Euro', '978', 'EUR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (223, 'SRI LANKA', 'Sri Lanka Rupee', '144', 'LKR', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (224, 'SUDAN', 'Sudanese Pound', '938', 'SDG', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (225, 'SURINAME', 'Surinam Dollar', '968', 'SRD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (226, 'SVALBARD AND JAN MAYEN', 'Norwegian Krone', '578', 'NOK', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (227, 'SWAZILAND', 'Lilangeni', '748', 'SZL', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (228, 'SWEDEN', 'Swedish Krona', '752', 'SEK', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (229, 'SWITZERLAND', 'WIR Euro', '947', 'CHE', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (230, 'SWITZERLAND', 'Swiss Franc', '756', 'CHF', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (231, 'SWITZERLAND', 'WIR Franc', '948', 'CHW', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (232, 'SYRIAN ARAB REPUBLIC', 'Syrian Pound', '760', 'SYP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (233, 'TAIWAN, PROVINCE OF CHINA', 'New Taiwan Dollar', '901', 'TWD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (234, 'TAJIKISTAN', 'Somoni', '972', 'TJS', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (235, 'TANZANIA, UNITED REPUBLIC OF', 'Tanzanian Shilling', '834', 'TZS', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (236, 'THAILAND', 'Baht', '764', 'THB', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (237, 'TIMOR-LESTE', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (238, 'TOGO', 'CFA Franc BCEAO', '952', 'XOF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (239, 'TOKELAU', 'New Zealand Dollar', '554', 'NZD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (240, 'TONGA', 'Paï¿½anga', '776', 'TOP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (241, 'TRINIDAD AND TOBAGO', 'Trinidad and Tobago Dollar', '780', 'TTD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (242, 'TUNISIA', 'Tunisian Dinar', '788', 'TND', 3)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (243, 'TURKEY', 'Turkish Lira', '949', 'TRY', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (244, 'TURKMENISTAN', 'Turkmenistan New Manat', '934', 'TMT', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (245, 'TURKS AND CAICOS ISLANDS', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (246, 'TUVALU', 'Australian Dollar', '036', 'AUD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (247, 'UGANDA', 'Uganda Shilling', '800', 'UGX', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (248, 'UKRAINE', 'Hryvnia', '980', 'UAH', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (249, 'UNITED ARAB EMIRATES', 'UAE Dirham', '784', 'AED', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (250, 'UNITED KINGDOM', 'Pound Sterling', '826', 'GBP', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (251, 'UNITED STATES', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (252, 'UNITED STATES', 'US Dollar (Next day)', '997', 'USN', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (253, 'UNITED STATES MINOR OUTLYING ISLANDS', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (254, 'URUGUAY', 'Uruguay Peso en Unidades Indexadas (URUIURUI)', '940', 'UYI', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (255, 'URUGUAY', 'Peso Uruguayo', '858', 'UYU', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (256, 'UZBEKISTAN', 'Uzbekistan Sum', '860', 'UZS', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (257, 'VANUATU', 'Vatu', '548', 'VUV', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (258, 'VENEZUELA, BOLIVARIAN REPUBLIC OF', 'Bolivar', '937', 'VEF', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (259, 'VIET NAM', 'Dong', '704', 'VND', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (260, 'VIRGIN ISLANDS (BRITISH)', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (261, 'VIRGIN ISLANDS (U.S.)', 'US Dollar', '840', 'USD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (262, 'WALLIS AND FUTUNA', 'CFP Franc', '953', 'XPF', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (263, 'WESTERN SAHARA', 'Moroccan Dirham', '504', 'MAD', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (264, 'YEMEN', 'Yemeni Rial', '886', 'YER', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (265, 'ZAMBIA', 'Zambian Kwacha', '967', 'ZMW', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (266, 'ZIMBABWE', 'Zimbabwe Dollar', '932', 'ZWL', 2)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (267, 'ZZ01_Bond Markets Unit European_EURCO', 'Bond Markets Unit European Composite Unit (EURCO)', '955', 'XBA', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (268, 'ZZ02_Bond Markets Unit European_EMU-6', 'Bond Markets Unit European Monetary Unit (E.M.U.-6)', '956', 'XBB', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (269, 'ZZ03_Bond Markets Unit European_EUA-9', 'Bond Markets Unit European Unit of Account 9 (E.U.A.-9)', '957', 'XBC', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (270, 'ZZ04_Bond Markets Unit European_EUA-17', 'Bond Markets Unit European Unit of Account 17 (E.U.A.-17)', '958', 'XBD', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (271, 'ZZ06_Testing_Code', 'Codes specifically reserved for testing purposes', '963', 'XTS', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (272, 'ZZ07_No_Currency', 'The codes assigned for transactions where no currency is involved', '999', 'XXX', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (273, 'ZZ08_Gold', 'Gold', '959', 'XAU', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (274, 'ZZ09_Palladium', 'Palladium', '964', 'XPD', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (275, 'ZZ10_Platinum', 'Platinum', '962', 'XPT', 0)
-insert into CURRENCY (id, entity, currency, numericCode, alphabeticCode, minorUnit) values (276, 'ZZ11_Silver', 'Silver', '961', 'XAG', 0)
--- Nuevo sol
-insert into DENOMINATION (id, currency_id, value) values (1, 186, 0.10)
-insert into DENOMINATION (id, currency_id, value) values (2, 186, 0.20)
-insert into DENOMINATION (id, currency_id, value) values (3, 186, 0.50)
-insert into DENOMINATION (id, currency_id, value) values (4, 186, 1)
-insert into DENOMINATION (id, currency_id, value) values (5, 186, 2)
-insert into DENOMINATION (id, currency_id, value) values (6, 186, 5)
-insert into DENOMINATION (id, currency_id, value) values (7, 186, 10)
-insert into DENOMINATION (id, currency_id, value) values (8, 186, 20)
-insert into DENOMINATION (id, currency_id, value) values (9, 186, 50)
-insert into DENOMINATION (id, currency_id, value) values (10, 186, 100)
-insert into DENOMINATION (id, currency_id, value) values (11, 186, 200)
--- Dolar americano
-insert into DENOMINATION (id, currency_id, value) values (12, 5, 1)
-insert into DENOMINATION (id, currency_id, value) values (13, 5, 2)
-insert into DENOMINATION (id, currency_id, value) values (14, 5, 5)
-insert into DENOMINATION (id, currency_id, value) values (15, 5, 10)
-insert into DENOMINATION (id, currency_id, value) values (16, 5, 20)
-insert into DENOMINATION (id, currency_id, value) values (17, 5, 50)
-insert into DENOMINATION (id, currency_id, value) values (18, 5, 100)
--- Euro
-insert into DENOMINATION (id, currency_id, value) values (19, 2, 1)
-insert into DENOMINATION (id, currency_id, value) values (20, 2, 2)
-insert into DENOMINATION (id, currency_id, value) values (21, 2, 10)
-insert into DENOMINATION (id, currency_id, value) values (22, 2, 20)
-insert into DENOMINATION (id, currency_id, value) values (23, 2, 100)
-insert into DENOMINATION (id, currency_id, value) values (24, 2, 200)
+
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('66f1355a-b1a7-4884-ac7a-c0c721e84698','AFGHANISTAN','Afghani','AFN','971','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('a06f3d35-fb0f-46fa-8164-4b173a164dd7','ÅLAND ISLANDS','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('1cfa23ac-1e9d-4d59-ad0d-0594f15fd9e7','ALBANIA','Lek','ALL','008','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('efff5b12-7724-4ced-be1f-1aaabec297a3','ALGERIA','Algerian Dinar','DZD','012','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('184a5837-8b43-430c-b1bc-128612fba88b','AMERICAN SAMOA','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('67707860-35ae-4f18-a8d0-5529567b6f07','ANDORRA','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('cb2f90ea-4edd-4125-9c91-a1415a9dad93','ANGOLA','Kwanza','AOA','973','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('77bfb120-869b-4445-a5ec-b3972d6184f4','ANGUILLA','East Caribbean Dollar','XCD','951','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('1f1aa20d-3fa2-4cc6-ade1-757f22a320ae','ANTIGUA AND BARBUDA','East Caribbean Dollar','XCD','951','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('f12517f9-59b2-4c53-b03e-a16a874fc76d','ARGENTINA','Argentine Peso','ARS','032','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('f84c63fc-ad65-4e30-98d6-d8e370c33fb3','ARMENIA','Armenian Dram','AMD','051','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('2465bfff-049b-4bab-be72-a934a2e71aa2','ARUBA','Aruban Florin','AWG','533','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('000a3574-433d-4a0f-a677-b5c6360b8c25','AUSTRALIA','Australian Dollar','AUD','036','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('a821fa55-da8a-4713-8589-06d3a01b74f8','AUSTRIA','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('aea27fe1-50c6-4b54-8030-4b31ead11ac1','AZERBAIJAN','Azerbaijanian Manat','AZN','944','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('0c32cc63-543a-412a-9c1d-7472c6f433d3','BAHAMAS','Bahamian Dollar','BSD','044','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('8fa0c53d-3905-47f5-8122-6770d02d16c7','BAHRAIN','Bahraini Dinar','BHD','048','3');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('7a37e383-d9a0-44a8-b4ce-635f398be928','BANGLADESH','Taka','BDT','050','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('d2da679a-b6e7-40e2-ad90-98f61768288d','BARBADOS','Barbados Dollar','BBD','052','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('e6ef92ef-8cc0-4997-8612-c3c3a86c16fb','BELARUS','Belarussian Ruble','BYR','974','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('0fcb32b8-2eed-4681-92b3-4edb7cb402ac','BELGIUM','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('08a5a68e-c045-4afa-bcec-cfdc9d25d9fd','BELIZE','Belize Dollar','BZD','084','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('d8135a7d-3f29-4040-bbe8-9b80c36ee6d9','BENIN','CFA Franc BCEAO','XOF','952','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('42e4d9d8-951f-4ac5-8180-f2423e745649','BERMUDA','Bermudian Dollar','BMD','060','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('efaad569-062a-419e-9224-33ea80a14fe2','BHUTAN','Ngultrum','BTN','064','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('6f73b27d-547c-4077-9e1f-2a184b451b6e','BHUTAN','Indian Rupee','INR','356','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('d8b7240d-ee93-426a-ade4-164de9ef6cec','BOLIVIA, PLURINATIONAL STATE OF','Boliviano','BOB','068','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('e198264a-a768-4742-8889-908afefbe8ff','BOLIVIA, PLURINATIONAL STATE OF','Mvdol','BOV','984','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('19a8a7c3-dd54-4044-8067-d3e00930605b','BONAIRE, SINT EUSTATIUS AND SABA','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('4171f565-15c1-4c8e-a176-07661d6f1ac8','BOSNIA AND HERZEGOVINA','Convertible Mark','BAM','977','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('e1aa3fee-a90c-4989-9215-8e2334985a95','BOTSWANA','Pula','BWP','072','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('75fab687-a3e8-482d-9752-3709f93a473a','BOUVET ISLAND','Norwegian Krone','NOK','578','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('b2c9e1ad-4992-45a0-ac2e-db102ebed652','BRAZIL','Brazilian Real','BRL','986','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('9214c437-201f-40c6-a59a-bc090d19b1ea','BRITISH INDIAN OCEAN TERRITORY','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('6c397016-6a99-458c-b184-ff3c44ee3522','BRUNEI DARUSSALAM','Brunei Dollar','BND','096','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('6e5a22f6-4026-4a3a-9a25-360c03b63562','BULGARIA','Bulgarian Lev','BGN','975','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('d0e6ece8-de97-40e4-b487-89e24710b451','BURKINA FASO','CFA Franc BCEAO','XOF','952','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('1b295e6b-cca3-4b61-9594-4aecee3e799c','BURUNDI','Burundi Franc','BIF','108','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('cbd92a61-cd4b-45d6-8001-d79f221ada60','CAMBODIA','Riel','KHR','116','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('90652e47-9775-4635-a784-10ae7ceb525c','CAMEROON','CFA Franc BEAC','XAF','950','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('e0a1663e-31ea-4a31-a6d0-b6b7f4d3d4c4','CANADA','Canadian Dollar','CAD','124','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('8df545d8-19fd-4d14-8265-800d270123b1','CABO VERDE','Cabo Verde Escudo','CVE','132','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('0e22692e-829f-4107-8baf-dc1db838511d','CAYMAN ISLANDS','Cayman Islands Dollar','KYD','136','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('31e86176-d1eb-4e8d-9c36-7e26ca67b054','CENTRAL AFRICAN REPUBLIC','CFA Franc BEAC','XAF','950','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('2999f55c-50b1-48f9-ad8a-33b219a83fdd','CHAD','CFA Franc BEAC','XAF','950','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('eb44a6dd-4287-4e80-99fe-7e60f6a38fc6','CHILE','Unidad de Fomento','CLF','990','4');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('7594f893-842d-4a3b-883f-352595692fed','CHILE','Chilean Peso','CLP','152','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('486023ef-1845-4a16-a1bd-e4f7782859c3','CHINA','Yuan Renminbi','CNY','156','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('d3b83f45-1adf-45a8-8c1f-3f4e9e3169b9','CHRISTMAS ISLAND','Australian Dollar','AUD','036','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('67fbfbe8-4316-4263-8789-240d26772c06','COCOS (KEELING) ISLANDS','Australian Dollar','AUD','036','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('c405d16e-193c-49dd-b559-1130b94a95fb','COLOMBIA','Colombian Peso','COP','170','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('b57b8ffc-c34c-4a94-9eb7-f8924f750235','COLOMBIA','Unidad de Valor Real','COU','970','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('a7708b33-9884-4206-952d-91ff6b1b8721','COMOROS','Comoro Franc','KMF','174','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('d746c597-4dc8-4645-91de-308e8caeea81','CONGO','CFA Franc BEAC','XAF','950','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('2050a905-7239-4334-baef-b304a77e0d8c','CONGO, DEMOCRATIC REPUBLIC OF THE ','Congolese Franc','CDF','976','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('297f01df-93e0-4544-9721-d92a5fe1ea1b','COOK ISLANDS','New Zealand Dollar','NZD','554','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('423a2bd4-6f94-48a3-94a8-2a8b2b93c042','COSTA RICA','Costa Rican Colon','CRC','188','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('f11e893b-a5ef-4340-b2e9-a8e489fb1fbb','CÔTE DIVOIRE','CFA Franc BCEAO','XOF','952','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('3a86ff5d-bf3c-4cf6-8001-d76a99b98bb4','CROATIA','Croatian Kuna','HRK','191','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('fca4ef01-fa5a-4352-b61a-0207fd3445e5','CUBA','Peso Convertible','CUC','931','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('4979c5bc-b79e-436f-bb0b-e973011b3456','CUBA','Cuban Peso','CUP','192','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('b1ff75a7-fb61-4949-adf2-b4bdde698f34','CURAÇAO','Netherlands Antillean Guilder','ANG','532','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('8946173e-ddc9-44b7-b1a7-a60cc592baf8','CYPRUS','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('3f0ecca5-1f7e-4a97-af8a-f66b3cd14358','CZECH REPUBLIC','Czech Koruna','CZK','203','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('429bf9cd-b89c-4c3f-8f4f-a8b5dad43e3f','DENMARK','Danish Krone','DKK','208','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('13542c93-ec4d-4211-b171-f3a5b26ae910','DJIBOUTI','Djibouti Franc','DJF','262','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('3c01d577-4548-44a0-869c-0f427badb0e6','DOMINICA','East Caribbean Dollar','XCD','951','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('a1e06e7b-a2fb-4db3-b3d8-df7ae3b5cca1','DOMINICAN REPUBLIC','Dominican Peso','DOP','214','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('2afa6053-be20-4a08-8631-6283fd607b35','ECUADOR','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('350b42e0-e999-4d0a-92da-de65ccd16804','EGYPT','Egyptian Pound','EGP','818','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('0268bacb-08d5-4037-a8da-d8697d93120e','EL SALVADOR','El Salvador Colon','SVC','222','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('9e2535ee-7287-4c9c-a26f-a5fa212aa373','EL SALVADOR','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('790e5094-3f1e-4037-b86e-3c2604b86e1e','EQUATORIAL GUINEA','CFA Franc BEAC','XAF','950','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('46de57fd-ed66-46bb-a9a5-9668189dd3a2','ERITREA','Nakfa','ERN','232','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('5c47b794-4b3f-4453-8f0a-79ceaaab8068','ESTONIA','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('9c05eaff-9a19-4939-b3a0-ac21af97fa19','ETHIOPIA','Ethiopian Birr','ETB','230','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('32d76b2e-bf02-4e7e-881b-0dd83d509428','EUROPEAN UNION','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('602aa83a-a4c4-47f7-8add-9204836f4aa5','FALKLAND ISLANDS (MALVINAS)','Falkland Islands Pound','FKP','238','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('c1be407f-0c87-4c9d-8895-660330e29516','FAROE ISLANDS','Danish Krone','DKK','208','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('c20e4cf3-59c2-4f2c-806e-5fe2fc297cc3','FIJI','Fiji Dollar','FJD','242','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('f2b06b65-37c8-4e78-9f7b-2a9de3101d2e','FINLAND','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('b45bd6a7-4bb1-4fec-bcaa-42c6bc4a68e7','FRANCE','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('c2c925bb-4e67-4df2-9537-a09f50512ed6','FRENCH GUIANA','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('a5ac7d40-5f04-4806-b299-c7597bbd8cdf','FRENCH POLYNESIA','CFP Franc','XPF','953','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('b5ede47f-8131-41e1-a987-ee9289f37b20','FRENCH SOUTHERN TERRITORIES','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('557c0816-be92-4fd4-bb75-14131f66dac6','GABON','CFA Franc BEAC','XAF','950','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('f12b98ee-0452-4fb1-a278-35d0a9cabd22','GAMBIA','Dalasi','GMD','270','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('cbc5962c-5ff4-4079-986f-4057ac4914b4','GEORGIA','Lari','GEL','981','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('951a1bc4-110f-408e-83ef-60020360eacb','GERMANY','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('df9224aa-36cf-4e6f-93f4-8e637b58614d','GHANA','Ghana Cedi','GHS','936','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('9a42a49e-d3ea-44e9-88c5-9ff70711161f','GIBRALTAR','Gibraltar Pound','GIP','292','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('9f5de229-9808-4930-b02d-4fa0ce17e997','GREECE','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('7eddce1b-33b4-419b-982d-f71aadb220df','GREENLAND','Danish Krone','DKK','208','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('662c87be-a1df-4a95-abb0-6ee512c1df5c','GRENADA','East Caribbean Dollar','XCD','951','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('51f98ae2-a6d0-4551-9403-bd7941aaac1d','GUADELOUPE','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('9579935b-4568-4a20-89c1-e61cd9b98660','GUAM','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('cf5c2f17-b50a-4314-af5d-ad838e53c536','GUATEMALA','Quetzal','GTQ','320','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('08c0f4ad-e813-4b91-b758-ddb5fb1544aa','GUERNSEY','Pound Sterling','GBP','826','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('dad662d3-ee4c-492f-b5e0-8b6e7be65906','GUINEA','Guinea Franc','GNF','324','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('abeaa100-8ae4-4a58-b092-676679a50969','GUINEA-BISSAU','CFA Franc BCEAO','XOF','952','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('1433af84-5a42-4d52-a9e1-a7d338cf02b7','GUYANA','Guyana Dollar','GYD','328','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('a57301d8-ea97-4772-a768-6e407e63107f','HAITI','Gourde','HTG','332','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('11843c3e-01c4-4091-b67b-34933c64b895','HAITI','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('487a1f31-1144-45e9-adfe-cde8dd091482','HEARD ISLAND AND McDONALD ISLANDS','Australian Dollar','AUD','036','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('945d23f3-6da4-4d8b-baca-a64f6036e515','HOLY SEE (VATICAN CITY STATE)','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('b4f3d10b-820b-43a3-b974-b4116114c1a1','HONDURAS','Lempira','HNL','340','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('46dce318-02b1-4ea8-8dd9-5d5f71f978da','HONG KONG','Hong Kong Dollar','HKD','344','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('5d2ba569-2263-4a7f-9dc2-aeae5cea9da9','HUNGARY','Forint','HUF','348','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('75449c21-5c21-422a-a8fa-47bd7a398239','ICELAND','Iceland Krona','ISK','352','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('71f0f731-9b39-4188-84d4-1aa86efa2990','INDIA','Indian Rupee','INR','356','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('d3c995c5-8f52-49ae-b7b9-4008a00afaff','INDONESIA','Rupiah','IDR','360','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('7e7afac9-c1c3-4bbc-bed6-7bf43b906855','INTERNATIONAL MONETARY FUND (IMF) ','SDR (Special Drawing Right)','XDR','960','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('fac83846-9958-48fa-ae11-65b70067b365','IRAN, ISLAMIC REPUBLIC OF','Iranian Rial','IRR','364','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('0c6fc311-288b-4b2c-b63f-bda19676d7f3','IRAQ','Iraqi Dinar','IQD','368','3');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('56ee9391-0bf3-4f29-acd9-c962ecb2d7e6','IRELAND','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('a3dc8bed-7ecf-45f0-85bd-727515c092cb','ISLE OF MAN','Pound Sterling','GBP','826','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('cb1778bd-236b-41ef-9333-d2098859d5ee','ISRAEL','New Israeli Sheqel','ILS','376','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('f5a6397d-81f2-4dbb-b5cd-9502ffe310f0','ITALY','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('07b787d8-4ce9-4102-83fc-9be3cfd33c97','JAMAICA','Jamaican Dollar','JMD','388','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('69109255-acb6-43e2-b614-5d08b7dd6aa9','JAPAN','Yen','JPY','392','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('7652aa96-eb76-443b-b306-4a46b29d45c6','JERSEY','Pound Sterling','GBP','826','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('9e771e5a-a6b1-4eff-9100-eaf6316e9550','JORDAN','Jordanian Dinar','JOD','400','3');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('8c7d843c-3416-4715-a436-37b7753f82ef','KAZAKHSTAN','Tenge','KZT','398','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('d0a82457-88f2-40f3-a387-22a3fdd63f43','KENYA','Kenyan Shilling','KES','404','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('7969eb2e-d7b0-4f6f-9e52-da0eb4520de9','KIRIBATI','Australian Dollar','AUD','036','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('f5662fe5-f882-4199-a53b-11a786bca45f','KOREA, DEMOCRATIC PEOPLE’S REPUBLIC OF','North Korean Won','KPW','408','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('fe2c5623-d616-49e6-a69f-f3778d43ead6','KOREA, REPUBLIC OF','Won','KRW','410','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('b58c37aa-449f-422a-8353-d9e06dbc8b30','KUWAIT','Kuwaiti Dinar','KWD','414','3');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('25c2364f-626c-4eac-a085-179673ea3236','KYRGYZSTAN','Som','KGS','417','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('31d4860f-b424-42a0-9fb5-9424604a1021','LAO PEOPLE’S DEMOCRATIC REPUBLIC','Kip','LAK','418','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('1151b3d7-d3ff-4516-bd40-1151dde92999','LATVIA','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('4f00348b-8a6e-4e96-b3db-890f3aa5ce03','LEBANON','Lebanese Pound','LBP','422','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('4866f1a8-2342-42e8-a9b4-30cf4ec9ab5f','LESOTHO','Loti','LSL','426','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('1b720fc7-eb6f-476b-bb6c-3ec9fc349d10','LESOTHO','Rand','ZAR','710','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('3f51c4a7-bac9-49fd-a9ec-de63ae1cbde6','LIBERIA','Liberian Dollar','LRD','430','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('99c5148a-b008-4d1b-b08c-13afb8c3d0ef','LIBYA','Libyan Dinar','LYD','434','3');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('5f3f1542-74ea-49f2-b818-c6ef739a40d3','LIECHTENSTEIN','Swiss Franc','CHF','756','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('da5d1c82-ae47-4e84-8bc1-e592b812d3ae','LITHUANIA','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('57d34385-1584-4fa1-8401-6e81e25def60','LUXEMBOURG','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('837c257c-0448-47d4-999b-a4b0be66c64f','MACAO','Pataca','MOP','446','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('627d6590-5f9f-47be-87b3-f5a67784ef81','"MACEDONIA, THE FORMER ');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('YUGOSLAV REPUBLIC OF"','Denar','MKD','807','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('214511df-5a74-4b59-a3df-0366e5ae88a3','MADAGASCAR','Malagasy Ariary','MGA','969','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('217f6593-1afa-49ab-b93e-06de8d0d6421','MALAWI','Kwacha','MWK','454','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('864ee614-30af-40c7-b45d-fecdd3274b02','MALAYSIA','Malaysian Ringgit','MYR','458','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('6a08707f-b37f-423c-abd6-2559f62640be','MALDIVES','Rufiyaa','MVR','462','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('9aadca1d-0953-4b25-a3f7-a8a792fcc36c','MALI','CFA Franc BCEAO','XOF','952','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('a1034fc1-4124-493b-988b-0f6a9d109b56','MALTA','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('545ee7fe-145a-4975-b317-b53832756eda','MARSHALL ISLANDS','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('5bf67b39-0ab4-4d6e-a86a-5b51314cb265','MARTINIQUE','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('72e32845-ac76-4b29-bf7c-da768a4ccd61','MAURITANIA','Ouguiya','MRO','478','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('119103c7-e28a-432e-baaf-dc5b45c29102','MAURITIUS','Mauritius Rupee','MUR','480','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('054cea11-66d4-4e48-9a31-29884e497186','MAYOTTE','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('ed147364-53c4-469a-a57c-89595fc97b55','MEMBER COUNTRIES OF THE AFRICAN DEVELOPMENT BANK GROUP','ADB Unit of Account','XUA','965','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('2d0d4399-e07f-4ed2-ab2c-25c27a864f9a','MEXICO','Mexican Peso','MXN','484','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('85ea5127-8df2-4a6b-b02a-2f5e6c4fb1a5','MEXICO','Mexican Unidad de Inversion (UDI)','MXV','979','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('0e3b59fb-ffe9-4625-b3b1-31a79e1bb8df','MICRONESIA, FEDERATED STATES OF','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('fddcaa30-cbee-4d03-b37a-11264ada7944','MOLDOVA, REPUBLIC OF','Moldovan Leu','MDL','498','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('61b40344-8104-4673-bc34-7ea3eb77cd51','MONACO','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('619c8b66-ca87-4733-aac1-f83dfe6bb7b8','MONGOLIA','Tugrik','MNT','496','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('abf71bb8-744a-4a50-a762-d3c37c0c34d9','MONTENEGRO','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('710daa45-1967-476a-bd1d-982e34e5abba','MONTSERRAT','East Caribbean Dollar','XCD','951','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('2355f614-300c-45f2-8057-09e875a34181','MOROCCO','Moroccan Dirham','MAD','504','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('a239db84-4e52-4483-b79a-257b756cb0bc','MOZAMBIQUE','Mozambique Metical','MZN','943','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('ec21efc0-845c-490c-89b1-ca2d9c4152c7','MYANMAR','Kyat','MMK','104','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('1a895ab8-6d83-4a78-8801-d4fa29afb30b','NAMIBIA','Namibia Dollar','NAD','516','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('3c961fbd-85d6-4559-b06b-35961253a9c8','NAMIBIA','Rand','ZAR','710','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('a22f3da1-3dc3-41c2-89d3-4848b6f90b2f','NAURU','Australian Dollar','AUD','036','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('b6bc23a4-cca1-4744-b3bc-d54636e39a30','NEPAL','Nepalese Rupee','NPR','524','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('c5c85a84-597d-485d-9093-10795cbff9fc','NETHERLANDS','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('3e1dc1ec-3eb0-4e06-9825-b7de8b038061','NEW CALEDONIA','CFP Franc','XPF','953','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('b4491ca4-23e3-4ab1-815d-eafe96ca6124','NEW ZEALAND','New Zealand Dollar','NZD','554','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('9c7b305d-1522-4437-8d75-9cb5ff3a31a4','NICARAGUA','Cordoba Oro','NIO','558','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('beff57a1-d3d8-4bec-94f5-1b82ecef69bf','NIGER','CFA Franc BCEAO','XOF','952','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('76b1688e-245d-414e-91e7-9989ba40cc4d','NIGERIA','Naira','NGN','566','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('cf98e8f6-da24-4a6b-84fc-45b2da5ea65b','NIUE','New Zealand Dollar','NZD','554','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('0d97d78f-80a6-4464-b31f-15f73cc662c3','NORFOLK ISLAND','Australian Dollar','AUD','036','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('67e1ef94-7152-445d-935a-ce97fbad8222','NORTHERN MARIANA ISLANDS','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('fcee1deb-9856-425a-ba54-fb07187fc776','NORWAY','Norwegian Krone','NOK','578','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('aab4bebd-229a-438b-95b5-7b9bd8067589','OMAN','Rial Omani','OMR','512','3');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('54e2b0db-236a-4cdb-9a24-71dba85784b9','PAKISTAN','Pakistan Rupee','PKR','586','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('7d3f0fa8-0952-4978-9786-436a4bdffb38','PALAU','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('0710b0e5-285a-468c-abf3-e86ecbfad8db','PANAMA','Balboa','PAB','590','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('9c9d151f-2532-4391-85d9-efb9e27edf8c','PANAMA','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('d92f33ad-7602-4985-9ed5-df627a15cd9d','PAPUA NEW GUINEA','Kina','PGK','598','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('11e02874-8345-4bb7-9983-50f39e0e6927','PARAGUAY','Guarani','PYG','600','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('6540f8c3-9bda-48ce-b66c-c5d79c49b788','PERU','Nuevo Sol','PEN','604','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('48baf534-51ad-4d47-acb7-acd63a402040','PHILIPPINES','Philippine Peso','PHP','608','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('b3922c14-e9fa-49cd-a3c6-e876c546cc20','PITCAIRN','New Zealand Dollar','NZD','554','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('0d694ec9-1a16-42f5-865f-9936fe2c2779','POLAND','Zloty','PLN','985','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('686d9e9d-4cb3-4cda-ba60-ba919b46aaae','PORTUGAL','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('29daeaf1-4ce3-4dd4-a332-daa8ea14a00a','PUERTO RICO','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('1508f3a4-410c-40ac-8589-6cd73071819e','QATAR','Qatari Rial','QAR','634','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('c1504fbf-02aa-4cec-9bf4-229cc330a9f2','RÉUNION','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('bfe281d9-7d1c-46ba-b508-e90bc836511b','ROMANIA','New Romanian Leu','RON','946','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('bccd9164-d550-42d4-8eb3-b641bc96829c','RUSSIAN FEDERATION','Russian Ruble','RUB','643','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('985fc9b4-619d-4613-ad84-6185240e5025','RWANDA','Rwanda Franc','RWF','646','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('fa9740bf-5b8b-4d54-910c-13be98239bf4','SAINT BARTHÉLEMY','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('c325e982-a8c6-42af-87c0-f931ec4f15b7','"SAINT HELENA, ASCENSION AND ');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('TRISTAN DA CUNHA"','Saint Helena Pound','SHP','654','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('2752c8a5-a905-472a-896a-11a313431658','SAINT KITTS AND NEVIS','East Caribbean Dollar','XCD','951','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('cf21a425-e109-466a-8c90-50b01c105bcc','SAINT LUCIA','East Caribbean Dollar','XCD','951','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('2e58cc99-8775-4edf-8917-8152c20d13c0','SAINT MARTIN (FRENCH PART)','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('ea888c11-a9cb-4abe-8d28-fc41ddd3c7fd','SAINT PIERRE AND MIQUELON','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('a6aaad8c-5f51-4b73-9669-feb434bf6c8f','SAINT VINCENT AND THE GRENADINES','East Caribbean Dollar','XCD','951','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('243ba446-8725-4cea-b6b9-93d604f836e5','SAMOA','Tala','WST','882','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('82280e68-2199-4179-9738-51a2c467b20c','SAN MARINO','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('67e83193-9acb-427f-8139-621a6f9e466f','SAO TOME AND PRINCIPE','Dobra','STD','678','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('5fed1b18-affb-4334-94d3-e06dc9476c2b','SAUDI ARABIA','Saudi Riyal','SAR','682','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('65a7a6da-6726-466d-ad09-5958ad1a9608','SENEGAL','CFA Franc BCEAO','XOF','952','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('de9aed11-bfc4-4849-8f4a-128a3173955e','SERBIA','Serbian Dinar','RSD','941','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('d342169f-2895-43fa-974e-92c85ca37059','SEYCHELLES','Seychelles Rupee','SCR','690','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('2eee42fa-cca8-41ef-b68b-6418a8bd8007','SIERRA LEONE','Leone','SLL','694','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('e3371834-463b-4536-b98d-a01bf9bd750f','SINGAPORE','Singapore Dollar','SGD','702','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('4c9cd59c-6bb7-430d-9d70-3d034916899f','SINT MAARTEN (DUTCH PART)','Netherlands Antillean Guilder','ANG','532','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('d83dd5c6-00df-42f4-a878-de4a149e4242','SISTEMA UNITARIO DE COMPENSACION REGIONAL DE PAGOS "SUCRE"','Sucre','XSU','994','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('184af586-628a-49df-9947-e0e780da5cfa','SLOVAKIA','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('141db89b-245d-4829-9ddf-91a970a11001','SLOVENIA','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('6d9d302f-7e60-4202-9bf7-c63de81f43e1','SOLOMON ISLANDS','Solomon Islands Dollar','SBD','090','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('630517f8-aec8-4c20-814c-a88bf7243d6e','SOMALIA','Somali Shilling','SOS','706','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('316f96e7-7efd-4057-8c5c-8aba1f6c847e','SOUTH AFRICA','Rand','ZAR','710','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('2a4f6f84-696f-4f32-b176-1cf696cdd525','SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS','No universal currency','','','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('bf2d0701-decf-473e-8530-9a313ed81ded','SOUTH SUDAN','South Sudanese Pound','SSP','728','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('2bbe3e80-3c6f-4e63-87d3-9f1a3da249f2','SPAIN','Euro','EUR','978','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('e4d39bdf-92e4-464a-b073-585d5aed4932','SRI LANKA','Sri Lanka Rupee','LKR','144','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('0a3b60de-4288-4029-a848-0aa3e538f8c4','SUDAN','Sudanese Pound','SDG','938','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('007dd3d5-cd95-469f-8c85-1ce204d78bb4','SURINAME','Surinam Dollar','SRD','968','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('0adf6bd3-10f8-4ddb-a396-31acae56cc4e','SVALBARD AND JAN MAYEN','Norwegian Krone','NOK','578','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('d837f06e-80df-4cef-bf0f-94cbf3a14448','SWAZILAND','Lilangeni','SZL','748','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('7fbb2fbd-95d1-4e5a-8524-cceec867c797','SWEDEN','Swedish Krona','SEK','752','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('ffa462ce-9ba3-4de0-8fe6-9c3157a82bf3','SWITZERLAND','WIR Euro','CHE','947','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('d2141a14-c0e9-41c8-a96d-95810011d022','SWITZERLAND','Swiss Franc','CHF','756','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('509dd78c-dd6f-4b53-a537-e9c81496c693','SWITZERLAND','WIR Franc','CHW','948','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('31fbb1b1-b315-4b59-8304-ce1ac6b1c6d9','SYRIAN ARAB REPUBLIC','Syrian Pound','SYP','760','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('2e4d6721-66a2-45b4-8e47-f1b647ab511a','TAIWAN, PROVINCE OF CHINA','New Taiwan Dollar','TWD','901','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('13c2190a-8324-47a1-afca-e5f2461364b7','TAJIKISTAN','Somoni','TJS','972','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('a7eaa303-e478-4eb7-8ac1-876c171d4619','TANZANIA, UNITED REPUBLIC OF','Tanzanian Shilling','TZS','834','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('eec5be01-744f-4da4-b077-0044219b8cdd','THAILAND','Baht','THB','764','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('6f6cc6bc-6993-4b7d-a3ab-fb9a31a48125','TIMOR-LESTE','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('fd8571e1-1c7a-4077-b645-b7be2a53c304','TOGO','CFA Franc BCEAO','XOF','952','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('c361ab9d-9db0-4f0b-9491-1d2dc6616765','TOKELAU','New Zealand Dollar','NZD','554','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('0d7add52-f26e-4cf6-a8df-7855df6b5115','TONGA','Pa’anga','TOP','776','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('25c22dee-a96c-4ee3-a353-03d4f3952460','TRINIDAD AND TOBAGO','Trinidad and Tobago Dollar','TTD','780','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('b354828a-c512-48b6-b6e7-94d5832946b0','TUNISIA','Tunisian Dinar','TND','788','3');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('7c6ad267-2fe2-4f31-804f-634718fc53b0','TURKEY','Turkish Lira','TRY','949','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('37181ce8-4f7f-4933-ac3b-a94d84f29c9f','TURKMENISTAN','Turkmenistan New Manat','TMT','934','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('03d28081-b8f6-4713-9008-02aabec22951','TURKS AND CAICOS ISLANDS','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('4861b08a-1232-4646-b822-c06512de346b','TUVALU','Australian Dollar','AUD','036','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('756fb688-ec2a-4ead-bf61-a69374ac1972','UGANDA','Uganda Shilling','UGX','800','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('658ed22a-c584-4252-8155-6d092de2dafa','UKRAINE','Hryvnia','UAH','980','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('81edbe55-c05b-419e-88dc-9d36b6f877a6','UNITED ARAB EMIRATES','UAE Dirham','AED','784','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('61dafb5e-e2af-4750-a964-415e13cbff0a','UNITED KINGDOM','Pound Sterling','GBP','826','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('896be8c8-a523-4df4-bea6-5661c1340248','UNITED STATES','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('8e346379-428d-48d3-95c7-25aaad98382b','UNITED STATES','US Dollar (Next day)','USN','997','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('70e12cbd-9b77-4054-947e-13e3ee43206a','UNITED STATES MINOR OUTLYING ISLANDS','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('b5e7a3b8-00ac-46c5-94f5-5bd7a08844ad','URUGUAY','Uruguay Peso en Unidades Indexadas (URUIURUI)','UYI','940','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('91adb9de-2780-4d42-80cf-df398fcf8eac','URUGUAY','Peso Uruguayo','UYU','858','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('bd800ef6-c346-4bb2-8d22-e20a52c0923f','UZBEKISTAN','Uzbekistan Sum','UZS','860','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('04d9385a-f883-4e89-8526-73562ad92a0a','VANUATU','Vatu','VUV','548','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('3e5db5e0-ad78-4c15-bcb2-829bf13f74a5','VENEZUELA, BOLIVARIAN REPUBLIC OF','Bolivar','VEF','937','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('b7808a5c-935f-4a1f-adbc-e31c2d6f9775','VIET NAM','Dong','VND','704','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('83ce70ea-50ea-4745-8281-7f517dd81859','VIRGIN ISLANDS (BRITISH)','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('a8772632-d9ea-4ee1-abff-47790122eef9','VIRGIN ISLANDS (U.S.)','US Dollar','USD','840','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('aafc7f0f-3476-4500-97c7-e1c8b038b48f','WALLIS AND FUTUNA','CFP Franc','XPF','953','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('b5703b27-6464-4369-ae38-325b40b6226a','WESTERN SAHARA','Moroccan Dirham','MAD','504','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('3426c249-e01c-485d-9dea-22f222964b61','YEMEN','Yemeni Rial','YER','886','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('ac180300-fd26-4291-abaa-034f0893bb05','ZAMBIA','Zambian Kwacha','ZMW','967','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('8ec2f00f-82ec-4416-8427-b1bead56673e','ZIMBABWE','Zimbabwe Dollar','ZWL','932','2');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('9e9b7b6e-2bc9-40cf-bae9-dbf6dacbc378','ZZ01_Bond Markets Unit European_EURCO','Bond Markets Unit European Composite Unit (EURCO)','XBA','955','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('c3e215dd-89fe-4ac2-bb05-c369ef86eaee','ZZ02_Bond Markets Unit European_EMU-6','Bond Markets Unit European Monetary Unit (E.M.U.-6)','XBB','956','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('dae1da5e-eb1e-4068-8f94-dcc50e57bc93','ZZ03_Bond Markets Unit European_EUA-9','Bond Markets Unit European Unit of Account 9 (E.U.A.-9)','XBC','957','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('7160df0a-c3b0-45d0-b160-ed4b55d6c7a4','ZZ04_Bond Markets Unit European_EUA-17','Bond Markets Unit European Unit of Account 17 (E.U.A.-17)','XBD','958','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('830eb352-34ca-4822-a145-d3a5d36c58e8','ZZ06_Testing_Code','Codes specifically reserved for testing purposes','XTS','963','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('2d69e2f0-df8e-42d5-969f-50a14ecbdd83','ZZ07_No_Currency','The codes assigned for transactions where no currency is involved','XXX','999','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('2f14a0b7-0dfd-4591-8fdf-692ef81909f3','ZZ08_Gold','Gold','XAU','959','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('de4548bc-7bed-456b-a827-ff31b59f96b0','ZZ09_Palladium','Palladium','XPD','964','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('4aaa1a77-83b0-45b2-9d2f-8c74645765e2','ZZ10_Platinum','Platinum','XPT','962','0');
+INSERT INTO CURRENCY (id,entity,currency,alphabeticCode,numericCode,minorUnit) VALUES ('159cb6cb-ce9a-4087-b66f-f7d1b4e587f8','ZZ11_Silver','Silver','XAG','961','0');
+
+-- Denominations
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('0bbae700-be94-4d14-b1dc-42446496b3aa','6540f8c3-9bda-48ce-b66c-c5d79c49b788','0.10');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('83db607c-2985-4491-aede-1f2bfa223fa9','6540f8c3-9bda-48ce-b66c-c5d79c49b789','0.20');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('0f29be5c-471e-4195-9c1a-a0d6b765c056','6540f8c3-9bda-48ce-b66c-c5d79c49b790','0.50');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('9147467e-077d-46d6-99f2-64771c884525','6540f8c3-9bda-48ce-b66c-c5d79c49b791','1.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('1383a190-2e65-40d3-9820-99bf61aeb54c','6540f8c3-9bda-48ce-b66c-c5d79c49b792','2.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('b6c23d6b-34df-4d73-97b7-1ef0bda06e22','6540f8c3-9bda-48ce-b66c-c5d79c49b793','5.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('726cabb6-0003-4b82-81e5-99f969430f47','6540f8c3-9bda-48ce-b66c-c5d79c49b794','10.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('40dd105c-3a0f-49ca-b68e-cb3aea89c742','6540f8c3-9bda-48ce-b66c-c5d79c49b795','20.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('70224430-ae1f-4bcc-8501-0f68b8cf5022','6540f8c3-9bda-48ce-b66c-c5d79c49b796','50.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('de272ef2-43bd-4552-9ed7-cd9a62bf2cfa','6540f8c3-9bda-48ce-b66c-c5d79c49b797','100.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('f5b24b1a-4b48-4fb1-b295-3b9366ff5970','6540f8c3-9bda-48ce-b66c-c5d79c49b798','200.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('1f521842-dc10-4077-95b7-a67ce70a97a2','184a5837-8b43-430c-b1bc-128612fba88b','1.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('3dbda9c6-ac88-4a8a-885e-57db33a7902a','184a5837-8b43-430c-b1bc-128612fba88b','2.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('1238aff5-f704-4971-88da-a9324442d948','184a5837-8b43-430c-b1bc-128612fba88b','5.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('65c24b7e-9f2b-44b6-92c0-1f504bd69244','184a5837-8b43-430c-b1bc-128612fba88b','10.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('6f3c10dc-5c1a-4a6e-aad7-e6e8036311d8','184a5837-8b43-430c-b1bc-128612fba88b','20.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('1726d5c2-6243-4a83-8afd-168fd796bd43','184a5837-8b43-430c-b1bc-128612fba88b','50.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('c1d341cc-063f-4f16-a0a6-0f1793121891','184a5837-8b43-430c-b1bc-128612fba88b','100.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('d88a4209-5aa0-4fbd-9a4c-1d2317770796','a06f3d35-fb0f-46fa-8164-4b173a164dd7','1.00');
+INSERT INTO DENOMINATION (id,currency_id,value) VALUES ('9780205d-938a-4852-9619-d526f6310fb1','a06f3d35-fb0f-46fa-8164-4b173a164dd8','2.00');

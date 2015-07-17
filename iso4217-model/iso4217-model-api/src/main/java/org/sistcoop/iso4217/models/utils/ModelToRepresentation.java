@@ -7,27 +7,28 @@ import org.sistcoop.iso4217.representations.idm.DenominationRepresentation;
 
 public class ModelToRepresentation {
 
-	public static CurrencyRepresentation toRepresentation(CurrencyModel model) {
-		if (model == null)
-			return null;
-		CurrencyRepresentation rep = new CurrencyRepresentation();
+    public static CurrencyRepresentation toRepresentation(CurrencyModel model) {
+        if (model == null)
+            return null;
 
-		rep.setEntity(model.getEntity());
-		rep.setCurrency(model.getCurrency());
-		rep.setAlphabeticCode(model.getAlphabeticCode());
-		rep.setNumericCode(model.getNumericCode());
-		rep.setMinorUnit(model.getMinorUnit());
+        CurrencyRepresentation rep = new CurrencyRepresentation();
 
-		return rep;
-	}
+        rep.setEntity(model.getEntity());
+        rep.setCurrency(model.getCurrency());
+        rep.setAlphabeticCode(model.getAlphabeticCode());
+        rep.setNumericCode(model.getNumericCode());
+        rep.setMinorUnit(model.getMinorUnit());
 
-	public static DenominationRepresentation toRepresentation(DenominationModel model) {
-		if (model == null)
-			return null;
-		DenominationRepresentation rep = new DenominationRepresentation();
-		rep.setValue(model.getValue());
-		
-		return rep;
-	}
+        return rep;
+    }
+
+    public static DenominationRepresentation toRepresentation(DenominationModel model) {
+        if (model == null)
+            return null;
+        DenominationRepresentation rep = new DenominationRepresentation();
+        rep.setValue(model.getValue());
+
+        return rep;
+    }
 
 }

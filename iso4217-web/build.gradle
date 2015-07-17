@@ -1,0 +1,37 @@
+apply plugin: 'war'
+apply plugin: 'jetty'
+//apply from: "$rootDir/gradle/functionalTest.gradle"
+apply from: "$rootDir/gradle/publishWarMaven.gradle"
+apply from: "$rootDir/gradle/cargo.gradle"
+//apply from: "$rootDir/gradle/smokeTest.gradle"
+
+dependencies {
+    compile project(":iso4217-core")
+    compile project(":iso4217-core-jaxrs")
+    compile project(":iso4217-integration:iso4217-client")
+    compile project(":iso4217-services")
+    compile project(":iso4217-model:iso4217-model-api")
+    compile project(":iso4217-model:iso4217-model-jpa")
+}
+
+task createBuildInfoFile << {
+    def buildInfoFile = new File("$buildDir/build-info.properties")
+    Properties props = new Properties()
+    props.setProperty('version', project.version.toString())
+    props.setProperty('timestamp', project.buildTimestamp)
+    props.store(buildInfoFile.newWriter(), null)
+}
+
+war {
+    dependsOn createBuildInfoFile
+    baseName = 'iso4217'
+
+    from(buildDir) {
+        include 'build-info.properties'
+        into('WEB-INF/classes')
+    }
+}
+
+jettyRun {
+    contextPath = 'iso4217'
+}

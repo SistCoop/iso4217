@@ -5,28 +5,28 @@ import java.util.List;
 
 public interface CurrencyModel extends Model {
 
-	Integer getId();
+    String getId();
 
-	String getEntity();
+    String getEntity();
 
-	void setEntity(String entity);
+    void setEntity(String entity);
 
-	String getCurrency();
+    String getCurrency();
 
-	void setCurrency(String currency);
+    void setCurrency(String currency);
 
-	String getAlphabeticCode();
+    String getAlphabeticCode();
 
-	String getNumericCode();
+    String getNumericCode();
 
-	int getMinorUnit();
+    int getMinorUnit();
 
-	void setMinorUnit(int minorUnit);
+    void setMinorUnit(int minorUnit);
 
-	DenominationModel addDenomination(BigDecimal value);
+    DenominationModel addDenomination(BigDecimal value);
 
-	boolean removeDenomination(DenominationModel denominationModel);
+    boolean removeDenomination(DenominationModel denominationModel);
 
-	List<DenominationModel> getDenominations();
+    List<DenominationModel> getDenominations();
 
 }

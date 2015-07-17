@@ -1,35 +1,29 @@
 package org.sistcoop.iso4217.models;
 
-import java.util.List;
-
 import javax.ejb.Local;
 
+import org.sistcoop.iso4217.models.search.SearchCriteriaModel;
+import org.sistcoop.iso4217.models.search.SearchResultsModel;
 import org.sistcoop.iso4217.provider.Provider;
 
 @Local
 public interface CurrencyProvider extends Provider {
 
-	CurrencyModel addCurrency(
-			String entity,
-			String currency,
-			String alphabeticCode,
-			String numericCode,
-		    int minorUnit);	
-		
-	boolean removeCurrency(CurrencyModel currencyModel);
+    CurrencyModel findById(String id);
 
-	CurrencyModel getCurrencyByAlphabeticCode(String  alphabeticCode);	
-	
-	CurrencyModel getCurrencyByNumericCode(String  numericCode);
-	
-	int getCurrencyCount();
-	
-	List<CurrencyModel> getCurrencies();	
+    CurrencyModel findByAlphabeticCode(String alpha2Code);
 
-	List<CurrencyModel> getCurrencies(String filterText);
-	
-	List<CurrencyModel> getCurrencies(int firstResult, int maxResults);		
+    CurrencyModel findByNumericCode(String numericCode);
 
-	List<CurrencyModel> getCurrencies(String filterText, int firstResult, int maxResults);
+    CurrencyModel create(String entity, String currency, String alphabeticCode, String numericCode,
+            int minorUnit);
+
+    boolean remove(CurrencyModel CurrencyModel);
+
+    SearchResultsModel<CurrencyModel> search();
+
+    SearchResultsModel<CurrencyModel> search(SearchCriteriaModel criteria);
+
+    SearchResultsModel<CurrencyModel> search(SearchCriteriaModel criteria, String filterText);
 
 }

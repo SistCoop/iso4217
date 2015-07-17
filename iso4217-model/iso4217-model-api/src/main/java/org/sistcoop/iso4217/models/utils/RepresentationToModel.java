@@ -10,20 +10,14 @@ import org.sistcoop.iso4217.representations.idm.CurrencyRepresentation;
 
 @Stateless
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
-public class RepresentationToModel {	
-		
-	public CurrencyModel createCurrency(
-			CurrencyRepresentation rep, 		
-			CurrencyProvider currencyProvider) {		
+public class RepresentationToModel {
 
-		CurrencyModel model = currencyProvider.addCurrency(
-				rep.getEntity(),
-				rep.getCurrency(),
-				rep.getAlphabeticCode(),
-				rep.getNumericCode(), 
-				rep.getMinorUnit());		
-		
-		return model;
-	}	
+    public CurrencyModel createCurrency(CurrencyRepresentation rep, CurrencyProvider currencyProvider) {
+
+        CurrencyModel model = currencyProvider.create(rep.getEntity(), rep.getCurrency(),
+                rep.getAlphabeticCode(), rep.getNumericCode(), rep.getMinorUnit());
+
+        return model;
+    }
 
 }

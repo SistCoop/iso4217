@@ -1,7 +1,5 @@
 dependencies {
 	compile project(':iso4217-integration:iso4217-client')
 	compile project(':iso4217-model:iso4217-model-api')
-	compile project(':iso4217-model:iso4217-model-jpa')	
-	
-	compile 'org.jboss.ejb3:jboss-ejb3-ext-api:2.1.0'
+	compile project(':iso4217-model:iso4217-model-jpa')
 }
