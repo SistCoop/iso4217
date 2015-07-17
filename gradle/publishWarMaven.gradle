@@ -10,7 +10,7 @@ publishing {
     publications {
         War(MavenPublication) {
             from components.web
-            artifactId 'iso3166'
+            artifactId 'iso4217'
 
             pom.withXml {
                 def root = asNode()
