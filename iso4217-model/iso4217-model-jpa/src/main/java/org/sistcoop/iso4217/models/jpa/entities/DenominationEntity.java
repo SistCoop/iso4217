@@ -70,6 +70,7 @@ public class DenominationEntity implements Serializable {
     @Max(value = 1000)
     @Digits(integer = 4, fraction = 2)
     @NaturalId
+    @Column(name = "VALUE")
     public BigDecimal getValue() {
         return value;
     }

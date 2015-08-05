@@ -24,7 +24,7 @@ import org.sistcoop.iso4217.models.search.filters.CurrencyFilterProvider;
 @Stateless
 @Local(CurrencyProvider.class)
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
-public class JpaCurrencyProvider extends AbstractJpaStorage implements CurrencyProvider {
+public class JpaCurrencyProvider extends AbstractHibernateStorage implements CurrencyProvider {
 
     @PersistenceContext
     protected EntityManager em;
@@ -126,7 +126,7 @@ public class JpaCurrencyProvider extends AbstractJpaStorage implements CurrencyP
 
     @Override
     public SearchResultsModel<CurrencyModel> search(SearchCriteriaModel criteria, String filterText) {
-        SearchResultsModel<CurrencyEntity> entityResult = find(criteria, CurrencyEntity.class, filterText,
+        SearchResultsModel<CurrencyEntity> entityResult = findFullText(criteria, CurrencyEntity.class, filterText,
                 filterProvider.getAlphabeticCodeFilter(), filterProvider.getNumericCodeFilter(),
                 filterProvider.getEntityFilter(), filterProvider.getCurrencyFilter());
 

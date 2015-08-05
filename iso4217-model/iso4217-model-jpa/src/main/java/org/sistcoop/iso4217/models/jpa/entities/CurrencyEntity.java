@@ -72,7 +72,7 @@ public class CurrencyEntity implements Serializable {
     @NotBlank
     @Size(min = 1, max = 200)
     @Field(index = Index.YES, analyze = Analyze.YES, store = Store.NO)
-    @Column(name = "entity")
+    @Column(name = "ENTITY")
     public String getEntity() {
         return entity;
     }
@@ -85,7 +85,7 @@ public class CurrencyEntity implements Serializable {
     @NotBlank
     @Size(min = 1, max = 200)
     @Field(index = Index.YES, analyze = Analyze.YES, store = Store.NO)
-    @Column(name = "currency")
+    @Column(name = "CURRENCY")
     public String getCurrency() {
         return currency;
     }
@@ -98,7 +98,7 @@ public class CurrencyEntity implements Serializable {
     @NotBlank
     @Size(min = 3, max = 3)
     @Field(index = Index.YES, analyze = Analyze.YES, store = Store.NO)
-    @Column(name = "alphabeticCode")
+    @Column(name = "ALPHABETIC_CODE")
     public String getAlphabeticCode() {
         return alphabeticCode;
     }
@@ -111,7 +111,7 @@ public class CurrencyEntity implements Serializable {
     @NotBlank
     @Size(min = 3, max = 3)
     @Field(index = Index.YES, analyze = Analyze.YES, store = Store.NO)
-    @Column(name = "numericCode")
+    @Column(name = "NUMERIC_CODE")
     public String getNumericCode() {
         return numericCode;
     }
@@ -122,6 +122,7 @@ public class CurrencyEntity implements Serializable {
 
     @NotNull
     @Min(value = 0)
+    @Column(name = "MINOR_UNIT")
     public int getMinorUnit() {
         return minorUnit;
     }
