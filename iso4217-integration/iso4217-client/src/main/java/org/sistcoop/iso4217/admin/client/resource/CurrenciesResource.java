@@ -2,7 +2,6 @@ package org.sistcoop.iso4217.admin.client.resource;
 
 import javax.ejb.EJBException;
 import javax.ws.rs.Consumes;
-import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -12,7 +11,6 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.hibernate.validator.constraints.NotBlank;
 import org.sistcoop.iso4217.representations.idm.CurrencyRepresentation;
 import org.sistcoop.iso4217.representations.idm.search.SearchResultsRepresentation;
 
@@ -60,21 +58,7 @@ public interface CurrenciesResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public SearchResultsRepresentation<CurrencyRepresentation> search(
-            @QueryParam("filterText") @NotBlank String filterText,
-            @QueryParam("page") @DefaultValue("1") int page,
-            @QueryParam("pageSize") @DefaultValue("20") int pageSize);
-
-    /**
-     * Buscar Currency segun los parametros enviados.
-     * 
-     * @summary Buscar todos los CountryCode
-     * @statuscode 200 Si la busqueda fue exitosa.
-     * @return SearchResultsRepresentation resultado de busqueda.
-     * @throws EJBException
-     *             datos validos pero ocurrio un error interno
-     */
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public SearchResultsRepresentation<CurrencyRepresentation> search();
+            @QueryParam("filterText") String filterText, @QueryParam("page") Integer page,
+            @QueryParam("pageSize") Integer pageSize);
 
 }

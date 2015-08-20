@@ -16,7 +16,6 @@ import org.sistcoop.iso4217.models.CurrencyProvider;
 import org.sistcoop.iso4217.models.search.PagingModel;
 import org.sistcoop.iso4217.models.search.SearchCriteriaModel;
 import org.sistcoop.iso4217.models.search.SearchResultsModel;
-import org.sistcoop.iso4217.models.search.filters.CurrencyFilterProvider;
 import org.sistcoop.iso4217.models.utils.ModelToRepresentation;
 import org.sistcoop.iso4217.models.utils.RepresentationToModel;
 import org.sistcoop.iso4217.representations.idm.CurrencyRepresentation;
@@ -37,9 +36,6 @@ public class CurrenciesResourceImpl implements CurrenciesResource {
     @Inject
     private CurrencyResource currencyResource;
 
-    @Inject
-    private CurrencyFilterProvider filterProvider;
-
     @Override
     public CurrencyResource currency(String countryCode) {
         return currencyResource;
@@ -54,36 +50,33 @@ public class CurrenciesResourceImpl implements CurrenciesResource {
     }
 
     @Override
-    public SearchResultsRepresentation<CurrencyRepresentation> search() {
-        SearchCriteriaModel searchCriteriaBean = new SearchCriteriaModel();
-        searchCriteriaBean.addOrder(filterProvider.getEntityFilter(), true);
+    public SearchResultsRepresentation<CurrencyRepresentation> search(String filterText, Integer page,
+            Integer pageSize) {
 
-        // search
-        SearchResultsModel<CurrencyModel> results = currencyProvider.search(searchCriteriaBean);
-        SearchResultsRepresentation<CurrencyRepresentation> rep = new SearchResultsRepresentation<>();
-        List<CurrencyRepresentation> representations = new ArrayList<>();
-        for (CurrencyModel model : results.getModels()) {
-            representations.add(ModelToRepresentation.toRepresentation(model));
+        SearchResultsModel<CurrencyModel> results = null;
+        if (filterText == null && page == null && pageSize == null) {
+            results = currencyProvider.search();
+        } else {
+            if (filterText == null) {
+                filterText = "";
+            }
+            if (page == null) {
+                page = 1;
+            }
+            if (pageSize == null) {
+                pageSize = 20;
+            }
+
+            PagingModel paging = new PagingModel();
+            paging.setPage(page);
+            paging.setPageSize(pageSize);
+
+            SearchCriteriaModel searchCriteriaBean = new SearchCriteriaModel();
+            searchCriteriaBean.setPaging(paging);
+
+            results = currencyProvider.search(searchCriteriaBean, filterText);
         }
-        rep.setTotalSize(results.getTotalSize());
-        rep.setItems(representations);
-        return rep;
-    }
 
-    @Override
-    public SearchResultsRepresentation<CurrencyRepresentation> search(String filterText, int page,
-            int pageSize) {
-
-        PagingModel paging = new PagingModel();
-        paging.setPage(page);
-        paging.setPageSize(pageSize);
-
-        SearchCriteriaModel searchCriteriaBean = new SearchCriteriaModel();
-        searchCriteriaBean.setPaging(paging);
-        searchCriteriaBean.addOrder(filterProvider.getEntityFilter(), true);
-
-        // search
-        SearchResultsModel<CurrencyModel> results = currencyProvider.search(searchCriteriaBean, filterText);
         SearchResultsRepresentation<CurrencyRepresentation> rep = new SearchResultsRepresentation<>();
         List<CurrencyRepresentation> representations = new ArrayList<>();
         for (CurrencyModel model : results.getModels()) {

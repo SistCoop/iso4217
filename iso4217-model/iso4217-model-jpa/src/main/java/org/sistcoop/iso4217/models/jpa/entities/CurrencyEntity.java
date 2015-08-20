@@ -19,16 +19,10 @@ import javax.validation.constraints.Size;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.NamedQueries;
 import org.hibernate.annotations.NamedQuery;
-import org.hibernate.search.annotations.Analyze;
-import org.hibernate.search.annotations.Field;
-import org.hibernate.search.annotations.Index;
-import org.hibernate.search.annotations.Indexed;
-import org.hibernate.search.annotations.Store;
 import org.hibernate.validator.constraints.NotBlank;
 
 @Cacheable
 @Entity
-@Indexed
 @Table(name = "CURRENCY")
 @NamedQueries({
         @NamedQuery(name = "CurrencyEntity.findAll", query = "SELECT c FROM CurrencyEntity c"),
@@ -71,7 +65,6 @@ public class CurrencyEntity implements Serializable {
     @NotNull
     @NotBlank
     @Size(min = 1, max = 200)
-    @Field(index = Index.YES, analyze = Analyze.YES, store = Store.NO)
     @Column(name = "ENTITY")
     public String getEntity() {
         return entity;
@@ -84,7 +77,6 @@ public class CurrencyEntity implements Serializable {
     @NotNull
     @NotBlank
     @Size(min = 1, max = 200)
-    @Field(index = Index.YES, analyze = Analyze.YES, store = Store.NO)
     @Column(name = "CURRENCY")
     public String getCurrency() {
         return currency;
@@ -97,7 +89,6 @@ public class CurrencyEntity implements Serializable {
     @NotNull
     @NotBlank
     @Size(min = 3, max = 3)
-    @Field(index = Index.YES, analyze = Analyze.YES, store = Store.NO)
     @Column(name = "ALPHABETIC_CODE")
     public String getAlphabeticCode() {
         return alphabeticCode;
@@ -110,7 +101,6 @@ public class CurrencyEntity implements Serializable {
     @NotNull
     @NotBlank
     @Size(min = 3, max = 3)
-    @Field(index = Index.YES, analyze = Analyze.YES, store = Store.NO)
     @Column(name = "NUMERIC_CODE")
     public String getNumericCode() {
         return numericCode;

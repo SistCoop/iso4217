@@ -88,7 +88,7 @@ public abstract class AbstractHibernateStorage {
         // query to determine how many rows there are in total
         int totalSize = start + resultList.size();
         if (hasMore) {
-            totalSize = executeCountQuery(criteria, session, type);
+            totalSize = executeCountQuery(criteria, session, type, filterText, field);
         }
         results.setTotalSize(totalSize);
         results.setModels(resultList);
@@ -143,7 +143,21 @@ public abstract class AbstractHibernateStorage {
         Criteria criteriaQuery = session.createCriteria(type);
         applySearchCriteriaToQuery(criteria, type, criteriaQuery, true);
         criteriaQuery.setProjection(Projections.rowCount());
-        return (Integer) criteriaQuery.uniqueResult();
+        return ((Long) criteriaQuery.uniqueResult()).intValue();
+    }
+
+    protected <T> int executeCountQuery(SearchCriteriaModel criteria, Session session, Class<T> type,
+            String filterText, String... field) {
+        Criteria criteriaQuery = session.createCriteria(type);
+        applySearchCriteriaToQuery(criteria, type, criteriaQuery, true);
+        List<Criterion> disjuntionsCount = new ArrayList<>();
+        for (String fieldName : field) {
+            Criterion criterion = Restrictions.ilike(fieldName, filterText, MatchMode.ANYWHERE);
+            disjuntionsCount.add(criterion);
+        }
+        criteriaQuery.add(Restrictions.or(disjuntionsCount.toArray(new Criterion[disjuntionsCount.size()])));
+        criteriaQuery.setProjection(Projections.rowCount());
+        return ((Long) criteriaQuery.uniqueResult()).intValue();
     }
 
     protected <T> void applySearchCriteriaToQuery(SearchCriteriaModel criteria, Class<T> type,

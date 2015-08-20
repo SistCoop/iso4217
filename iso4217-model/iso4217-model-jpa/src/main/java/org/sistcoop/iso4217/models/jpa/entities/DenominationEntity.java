@@ -20,11 +20,9 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.NaturalId;
-import org.hibernate.search.annotations.Indexed;
 
 @Cacheable
 @Entity
-@Indexed
 @Table(name = "DENOMINATION")
 public class DenominationEntity implements Serializable {
 
